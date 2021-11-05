@@ -18,13 +18,14 @@ class Message
 
 	function create($name_, $email_, $subject_, $message_)
 	{
-		$query = "INSERT INTO " . $this->table_name . " (name, email, subject, message) VALUES (:name, :email, :subject, :message)";
+		$query = "INSERT INTO " . $this->table_name .
+			 " (fromName, fromEmail, fromSubject, fromMessage) VALUES (:fromName, :fromEmail, :fromSubject, :fromMessage)";
 		$stmt = $this->conn->prepare($query);
 
-		$stmt->bindParam(":name", $name_);
-		$stmt->bindParam(":email", $email_);
-		$stmt->bindParam(":subject", $subject_);
-		$stmt->bindParam(":message", $message_);
+		$stmt->bindParam(":fromName", $name_);
+		$stmt->bindParam(":fromEmail", $email_);
+		$stmt->bindParam(":fromSubject", $subject_);
+		$stmt->bindParam(":fromMessage", $message_);
 
 		if ($stmt->execute()) {
 			return true;
