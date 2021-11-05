@@ -1,0 +1,10 @@
+### test insert
+PUT {{baseUrl}}message/create.php
+Content-Type: application/json
+
+{
+  "name" : "gatto",
+  "email" : "gatto",
+  "subject" : "gatto",
+  "message" : "gatto"
+}
