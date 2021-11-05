@@ -1,5 +1,16 @@
 ### test insert
-PUT {{baseUrl}}message/create.php
+POST {{localUrl}}message/create.php
+Content-Type: application/json
+
+{
+  "name" : "gatto",
+  "email" : "gatto",
+  "subject" : "gatto",
+  "message" : "gatto"
+}
+
+### test insert
+POST {{prodUrl}}message/create.php
 Content-Type: application/json
 
 {
