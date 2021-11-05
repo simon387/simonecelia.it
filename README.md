@@ -6,9 +6,9 @@ my personal site repository
 
 class Config
 {
-	static $host = '';
-	static $db_name = '';
-	static $username  = '';
-	static $password  = '';
+	static $host = '172.17.0.2';
+	static $db_name = 'poster';
+	static $username  = 'root';
+	static $password  = 'root';
 }
 ```
