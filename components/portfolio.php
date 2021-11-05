@@ -139,6 +139,31 @@
 					</a>
 				</div>
 			</div>
+			<div class="col-md-4">
+				<div class="work-box">
+					<a href="img/poster.png" data-lightbox="gallery-mf">
+						<div class="work-img">
+							<img src="img/poster.png" alt="" class="img-fluid">
+						</div>
+						<div class="work-content">
+							<div class="row">
+								<div class="col-sm-8">
+									<h2 class="w-title">Poster</h2>
+									<div class="w-more">
+										<span class="w-ctegory">Web Application</span> / <span
+												class="w-date">5 Jan. 2021</span>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="w-like">
+										<span class="ion-ios-plus-outline"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
