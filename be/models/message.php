@@ -1,7 +1,5 @@
 <?php
 
-require 'PHPMailerAutoload.php';
-
 class Message
 {
 	private $conn;
@@ -17,8 +15,6 @@ class Message
 	{
 		$this->conn = $db;
 	}
-
-
 
 	function create($name_, $email_, $subject_, $message_)
 	{
