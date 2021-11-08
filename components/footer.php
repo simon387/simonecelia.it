@@ -67,7 +67,7 @@
 																</div>
 																<div class="more-info">
 																		<p class="lead">
-																				This form is currently disabled, but feel free to contact me in other ways!
+																				Feel free to contact me!
 																		</p>
 																		<ul class="list-ico">
 																				<li><span class="ion-ios-location"></span> ITALY and SPAIN</li>
