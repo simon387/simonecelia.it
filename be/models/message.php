@@ -19,7 +19,7 @@ class Message
 	function create($name_, $email_, $subject_, $message_)
 	{
 		$query = "INSERT INTO " . $this->table_name .
-			 " (fromName, fromEmail, fromSubject, fromMessage) VALUES ('gatto', 'gatto', 'gatto', 'gatto')";
+			 " (fromName, fromEmail, fromSubject, fromMessage) VALUES ('" . $name_ . "', '" . $email_ . "', '" . $subject_ . "', '" . $message_ ."')";
 		$stmt = $this->conn->prepare($query);
 
 		$stmt->bindParam(":fromName", $name_);
