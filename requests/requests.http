@@ -14,8 +14,8 @@ POST {{prodUrl}}message/create.php
 Content-Type: application/json
 
 {
-  "name" : "gatto",
-  "email" : "gatto",
-  "subject" : "gatto",
-  "message" : "gatto"
+  "name" : "name",
+  "email" : "email",
+  "subject" : "subject",
+  "message" : "message"
 }
