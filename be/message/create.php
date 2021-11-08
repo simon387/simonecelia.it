@@ -15,7 +15,7 @@ $message = new Message($db);
 
 $data = json_decode(file_get_contents("php://input"));
 
-if ($message->create($data->name, $data->email, $data->subject, $data->message)) {
+if ($message->create("$data->name", "$data->email", "$data->subject", "$data->message")) {
 	http_response_code(200);
 	echo json_encode(array("response" => "Message created"));
 } else {
