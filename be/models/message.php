@@ -1,7 +1,7 @@
 <?php
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+//use PHPMailer\PHPMailer\PHPMailer;
+//use PHPMailer\PHPMailer\Exception;
 require '../PHPMailer/src/Exception.php';
 require '../PHPMailer/src/PHPMailer.php';
 require '../PHPMailer/src/SMTP.php';
@@ -33,15 +33,7 @@ class Message
 			$mail = new PHPMailer(true);
 
 			try {
-				//Server settings
-				$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-				$mail->isSMTP();                                            //Send using SMTP
-				$mail->Host       = 'mail.tophost.it';                     //Set the SMTP server to send through
-				$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-				$mail->Username   = 'webmaster@simonecelia.it';                     //SMTP username
-				$mail->Password   = '12Caratteri!';                               //SMTP password
-				$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-				$mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+				//TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 				//Recipients
 				$mail->setFrom('webmaster@simonecelia.it', 'Mailer');
