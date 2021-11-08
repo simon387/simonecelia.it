@@ -1,5 +1,7 @@
 <?php
 
+require 'PHPMailerAutoload.php';
+
 class Message
 {
 	private $conn;
@@ -16,10 +18,12 @@ class Message
 		$this->conn = $db;
 	}
 
+
+
 	function create($name_, $email_, $subject_, $message_)
 	{
 		$query = "INSERT INTO " . $this->table_name .
-			" (fromName, fromEmail, fromSubject, fromMessage) VALUES (:fromName, :fromEmail, :fromSubject, :fromMessage)";
+				" (fromName, fromEmail, fromSubject, fromMessage) VALUES (:fromName, :fromEmail, :fromSubject, :fromMessage)";
 		$stmt = $this->conn->prepare($query);
 
 		$stmt->bindParam(":fromName", $name_);
@@ -28,8 +32,23 @@ class Message
 		$stmt->bindParam(":fromMessage", $message_);
 
 		if ($stmt->execute()) {
+			sendMail($name_, $email_, $subject_, $message_);
 			return true;
 		}
 		return false;
+	}
+
+	function sendMail($name_, $email_, $subject_, $message_)
+	{
+
+		$to = 'simone.celia@simonecelia.it';
+		$subject = 'the subject';
+		$message = 'hello';
+		$headers = 'From: simone.celia@simonecelia.it' . "\r\n" .
+				'Reply-To: simone.celia@simonecelia.it' . "\r\n" .
+				'X-Mailer: PHP/' . phpversion();
+
+		mail($to, $subject, $message, $headers);
+
 	}
 }
