@@ -32,7 +32,7 @@ class Message
 		$stmt->bindParam(":fromMessage", $message_);
 
 		if ($stmt->execute()) {
-			sendMail($name_, $email_, $subject_, $message_);
+			//sendMail($name_, $email_, $subject_, $message_);
 			return true;
 		}
 		return false;
