@@ -44,14 +44,14 @@
 																						<div class="col-md-12 mb-3">
 																								<div class="form-group">
 													<textarea class="form-control" name="message" rows="5"
-													          data-rule="required"
+													          data-rule="required" id="message"
 													          data-msg="Please write something for us"
 													          placeholder="Message"></textarea>
 																										<div class="validation"></div>
 																								</div>
 																						</div>
 																						<div class="col-md-12">
-																								<button disabled type="submit" class="button button-a button-big button-rouded">
+																								<button type="submit" class="button button-a button-big button-rouded">
 																										Send Message
 																								</button>
 																						</div>

@@ -100,7 +100,7 @@ jQuery(document).ready(function ($) {
 		const message = document.getElementById("message").value;
 		$.ajax({
 			type: "POST",
-			url: window.location.href + "/be/message/create.php",
+			url: window.location.href + "be/message/create.php",
 			contentType: "application/json; charset=utf-8",
 			processData: false,
 			dataType: "json",
