@@ -1,72 +1,52 @@
 <?php
 
-//use PHPMailer\PHPMailer\PHPMailer;
-//use PHPMailer\PHPMailer\Exception;
-require '../PHPMailer/src/Exception.php';
-require '../PHPMailer/src/PHPMailer.php';
-require '../PHPMailer/src/SMTP.php';
-
 class Message
 {
 	private $conn;
-	private string $table_name = "message";
-
+	private $table_name = "message";
+	
 	public function __construct($db)
 	{
 		$this->conn = $db;
 	}
-
-	function create($name_, $email_, $subject_, $message_)
+	
+	function create($name, $email, $subject, $message)
 	{
 		$query = "INSERT INTO " . $this->table_name .
-				" (fromName, fromEmail, fromSubject, fromMessage) VALUES (:fromName, :fromEmail, :fromSubject, :fromMessage)";
+			" (fromName, fromEmail, fromSubject, fromMessage) VALUES (:fromName, :fromEmail, :fromSubject, :fromMessage)";
 		$stmt = $this->conn->prepare($query);
-
-		$stmt->bindParam(":fromName", $name_);
-		$stmt->bindParam(":fromEmail", $email_);
-		$stmt->bindParam(":fromSubject", $subject_);
-		$stmt->bindParam(":fromMessage", $message_);
-
+		
+		$stmt->bindParam(":fromName", $name);
+		$stmt->bindParam(":fromEmail", $email);
+		$stmt->bindParam(":fromSubject", $subject);
+		$stmt->bindParam(":fromMessage", $message);
+		
 		if ($stmt->execute()) {
-			//sendMail($name_, $email_, $subject_, $message_);
-			//Create an instance; passing `true` enables exceptions
-			$mail = new PHPMailer(true);
-
-			try {
-				//TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
-				//Recipients
-				$mail->setFrom('webmaster@simonecelia.it', 'Mailer');
-				$mail->addAddress('simone.celia@simonecelia.it', 'Joe User');     //Add a recipient
-				$mail->addReplyTo('simone.celia@simonecelia.it', 'Information');
-
-				//Content
-				$mail->isHTML(true);                                  //Set email format to HTML
-				$mail->Subject = 'Here is the subject';
-				$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-				$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-				$mail->send();
-				echo 'Message has been sent';
-			} catch (Exception $e) {
-				echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-			}
+			$this->sendMail($name, $email, $subject, $message);
 			return true;
 		}
 		return false;
 	}
-
-	function sendMail($name_, $email_, $subject_, $message_)
+	
+	function sendMail($name, $email, $subject, $message)
 	{
-
-		$to = 'simone.celia@simonecelia.it';
-		$subject = 'the subject';
-		$message = 'hello';
-		$headers = 'From: simone.celia@simonecelia.it' . "\r\n" .
-				'Reply-To: simone.celia@simonecelia.it' . "\r\n" .
-				'X-Mailer: PHP/' . phpversion();
-
-		mail($to, $subject, $message, $headers);
-
+		$intestazione = "From: Simone Celia <simone.celia@simonecelia.it>\r\n";
+		$intestazione .= "X-Priority: 3\r\n"; // 2 = urgente, 3 = normale, 4 = bassa priorità
+		$intestazione .= "X-Mailer: PHP/" . phpversion();
+		
+		$destinatario = "simone.celia@simonecelia.it";
+		
+		$oggetto = "Messaggio da simonecelia.it";
+		
+		$messaggio = "Questo e' un messaggio inviato dalla form informazioni di simonecelia.it\r\n";
+		$messaggio .= "Dati inseriti nella form:\r\n";
+		$messaggio .= "Nome: " . $name . "\r\n";
+		$messaggio .= "Email: " . $email . "\r\n";
+		$messaggio .= "Oggetto: " . $subject . "\r\n";
+		$messaggio .= "Messaggio: " . $message . "\r\n";
+		
+		$parametri = "-f simone.celia@simonecelia.it";
+		
+		mail($destinatario, $oggetto, $messaggio, $intestazione, $parametri);
 	}
 }
