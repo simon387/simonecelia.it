@@ -1,5 +1,6 @@
 # simonecelia.it
 my personal site repository
++ Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
 ## config.php example
 ```injectablephp
 <?php
