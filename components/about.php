@@ -8,7 +8,7 @@
 							<div class="row">
 								<div class="col-sm-6 col-md-5">
 									<div class="about-img">
-										<img src="img/primo_piano.jpg" class="img-fluid rounded b-shadow-a" alt="">
+										<img src="assets/img/primo_piano.jpg" class="img-fluid rounded b-shadow-a" alt="">
 									</div>
 								</div>
 								<div class="col-sm-6 col-md-7">
