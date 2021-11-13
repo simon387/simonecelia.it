@@ -58,30 +58,31 @@
 		if (!url.endsWith("/")) {
 			url += "/";
 		}
-		$.ajax({
-			type: "POST",
-			url: url + "be/message/create.php",
-			contentType: "application/json; charset=utf-8",
-			processData: false,
-			dataType: "json",
-			data: JSON.stringify({
+		// $.ajax({
+		// 	type: "POST",
+		// 	url: url + "be/message/create.php",
+		// 	contentType: "application/json; charset=utf-8",
+		// 	processData: false,
+		// 	dataType: "json",
+		// 	data: JSON.stringify({
+		// 		name, email, subject, message
+		// 	}),
+		// 	success: function () {
+		// 		thisForm.querySelector('.sent-message').classList.add('d-block');
+		// 		thisForm.reset();
+		// 	},
+		// 	error: function (xhr, ajaxOptions, thrownError) {
+		// 		displayError(thisForm, xhr.responseText);
+		// 	},
+		// 	complete: function () {
+		// 		thisForm.querySelector('.loading').classList.remove('d-block');
+		// 	}
+		// });
+		fetch(window.location.href + "be/message/create.php", {
+			method: 'POST',
+			body: JSON.stringify({
 				name, email, subject, message
 			}),
-			success: function () {
-				thisForm.querySelector('.sent-message').classList.add('d-block');
-				thisForm.reset();
-			},
-			error: function (xhr, ajaxOptions, thrownError) {
-				displayError(thisForm, xhr.responseText);
-			},
-			complete: function () {
-				thisForm.querySelector('.loading').classList.remove('d-block');
-			}
-		});
-		/*
-		fetch(action, {
-			method: 'POST',
-			body: formData,
 			headers: {'X-Requested-With': 'XMLHttpRequest'}
 		})
 		.then(response => {
@@ -93,7 +94,7 @@
 		})
 		.then(data => {
 			thisForm.querySelector('.loading').classList.remove('d-block');
-			if (data.trim() == 'OK') {
+			if (data.trim() === 'OK') {
 				thisForm.querySelector('.sent-message').classList.add('d-block');
 				thisForm.reset();
 			} else {
@@ -103,7 +104,6 @@
 		.catch((error) => {
 			displayError(thisForm, error);
 		});
-		*/
 	}
 
 	function displayError(thisForm, error) {
