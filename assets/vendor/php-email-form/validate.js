@@ -17,10 +17,10 @@
 			let action = thisForm.getAttribute('action');
 			let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
 
-			// if (!action) {
-			// 	displayError(thisForm, 'The form action property is not set!')
-			// 	return;
-			// }
+			if (!action) {
+				displayError(thisForm, 'The form action property is not set!')
+				return;
+			}
 			thisForm.querySelector('.loading').classList.add('d-block');
 			thisForm.querySelector('.error-message').classList.remove('d-block');
 			thisForm.querySelector('.sent-message').classList.remove('d-block');
@@ -54,31 +54,7 @@
 		const email = document.getElementById("email").value;
 		const subject = document.getElementById("subject").value;
 		const message = document.getElementById("message").value;
-		let url = window.location.href;
-		if (!url.endsWith("/")) {
-			url += "/";
-		}
-		// $.ajax({
-		// 	type: "POST",
-		// 	url: url + "be/message/create.php",
-		// 	contentType: "application/json; charset=utf-8",
-		// 	processData: false,
-		// 	dataType: "json",
-		// 	data: JSON.stringify({
-		// 		name, email, subject, message
-		// 	}),
-		// 	success: function () {
-		// 		thisForm.querySelector('.sent-message').classList.add('d-block');
-		// 		thisForm.reset();
-		// 	},
-		// 	error: function (xhr, ajaxOptions, thrownError) {
-		// 		displayError(thisForm, xhr.responseText);
-		// 	},
-		// 	complete: function () {
-		// 		thisForm.querySelector('.loading').classList.remove('d-block');
-		// 	}
-		// });
-		fetch(window.location.href + "be/message/create.php", {
+		fetch(action, {
 			method: 'POST',
 			body: JSON.stringify({
 				name, email, subject, message
@@ -94,7 +70,7 @@
 		})
 		.then(data => {
 			thisForm.querySelector('.loading').classList.remove('d-block');
-			if (data.trim() === 'OK') {
+			if (data.trim() === '{"response" => "Message created"}') {
 				thisForm.querySelector('.sent-message').classList.add('d-block');
 				thisForm.reset();
 			} else {
