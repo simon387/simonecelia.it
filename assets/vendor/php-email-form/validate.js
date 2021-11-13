@@ -70,7 +70,7 @@
 		})
 		.then(data => {
 			thisForm.querySelector('.loading').classList.remove('d-block');
-			if (data.trim() === '{"response" : "Message created"}') {
+			if (data.trim() === "{\"response\":\"Message created\"}") {
 				thisForm.querySelector('.sent-message').classList.add('d-block');
 				thisForm.reset();
 			} else {
