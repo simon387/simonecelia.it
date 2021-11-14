@@ -9,4 +9,3 @@ create table message
     fromMessage   varchar(8192)                         null,
     fromTimestamp timestamp default current_timestamp() null
 );
-
