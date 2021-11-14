@@ -1,3 +1,6 @@
+Version 1.1.2
+- improved CEO
+
 Version 1.1.1
 - removed jQuery
 
