@@ -1,3 +1,6 @@
+Version 1.3.0
+- added version to fe
+
 Version 1.2.1
 - added maxlength to inputs
 
