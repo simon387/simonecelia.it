@@ -7,6 +7,12 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 
 include_once '../services/MessageService.php';
 
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+	http_response_code(404);
+	echo json_encode(array("response" => "Method not supported"));
+	die();
+}
+
 $messageServices = new MessageService();
 $data = json_decode(file_get_contents("php://input"));
 
