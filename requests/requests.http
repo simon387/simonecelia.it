@@ -1,5 +1,5 @@
 ### test insert local
-POST {{localUrl}}message/create.php
+POST {{localUrl}}controllers/message.php
 Content-Type: application/json
 
 {
@@ -10,7 +10,7 @@ Content-Type: application/json
 }
 
 ### test insert prod
-POST {{prodUrl}}message/create.php
+POST {{prodUrl}}controllers/message.php
 Content-Type: application/json
 
 {
