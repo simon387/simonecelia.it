@@ -8,7 +8,7 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 include_once '../services/MessageService.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-	http_response_code(404);
+	http_response_code(405);
 	echo json_encode(array("response" => "Method not supported"));
 	die();
 }
