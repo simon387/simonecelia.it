@@ -13,6 +13,10 @@ class Message
 
 	function create($name, $email, $subject, $message)
 	{
+		if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+			return false;
+		}
+
 		$query = "INSERT INTO " . $this->table_name .
 				" (fromName, fromEmail, fromSubject, fromMessage) VALUES (:fromName, :fromEmail, :fromSubject, :fromMessage)";
 		$stmt = $this->conn->prepare($query);
@@ -23,8 +27,7 @@ class Message
 		$stmt->bindParam(":fromMessage", $message);
 
 		if ($stmt->execute()) {
-			$this->sendMail($name, $email, $subject, $message);
-			return true;
+			return $this->sendMail($name, $email, $subject, $message);
 		}
 		return false;
 	}
@@ -48,6 +51,6 @@ class Message
 
 		$parameters = "-f " . $this->smtp_email;
 
-		mail($to, $subj, $msg, $head, $parameters);
+		return mail($to, $subj, $msg, $head, $parameters);
 	}
 }
