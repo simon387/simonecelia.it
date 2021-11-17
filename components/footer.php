@@ -8,7 +8,7 @@ fclose($f);
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="copyright-box">
-					<p class="copyright">&copy; Copyright <strong>simonecelia.it</strong>. All Rights Reserved. <?php echo $version ?>.
+					<p class="copyright">&copy; Copyright <strong>simonecelia.it</strong>. All Rights Reserved. <?php echo $version ?>
 					<div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
 				</div>
 			</div>
