@@ -1,5 +1,6 @@
 Version 1.3.7
 - upd comarca
+- upd footer
 
 Version 1.3.6
 - fix rest api
