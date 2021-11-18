@@ -24,7 +24,7 @@ class MessageService
 		}
 
 		$ignore_sending_email = true;
-		if (Config::$send_mail) {
+		if (Config::$send_email) {
 			$ignore_sending_email = $this->sendMail($data->name, $data->email, $data->subject, $data->message);
 		}
 

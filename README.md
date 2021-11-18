@@ -18,7 +18,7 @@ class Config
 	static $db_username  = 'test';
 	static $db_password  = 'test';
 	static $db_statement_0  = "SET GLOBAL time_zone='Europe/Madrid'";
-	static $send_mail = true;
+	static $send_email = true;
 	static $smtp_email = 'simone.celia@simonecelia.it';
 }
 ```
