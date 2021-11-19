@@ -13,6 +13,12 @@ jobs:
       - name: Minify Action
         uses: anthonyftwang/minify-action@v1.0.1
 
+      - name: Auto committing minified files to a separate branch
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Github Action: Auto Minified JS, HTML and CSS files"
+          branch: minified
+
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
