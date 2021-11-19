@@ -34,7 +34,7 @@
 							grecaptcha.execute(recaptcha, {action: 'php_email_form_submit'})
 								.then(token => {
 									formData.set('recaptcha-response', token);
-									php_email_form_submit(thisForm, action, formData);
+									php_email_form_submit(thisForm, action);
 								})
 						} catch (error) {
 							displayError(thisForm, error)
@@ -44,12 +44,12 @@
 					displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
 				}
 			} else {
-				php_email_form_submit(thisForm, action, formData);
+				php_email_form_submit(thisForm, action);
 			}
 		});
 	});
 
-	function php_email_form_submit(thisForm, action, formData) {
+	function php_email_form_submit(thisForm, action) {
 		const name = document.getElementById("name").value;
 		const email = document.getElementById("email").value;
 		const subject = document.getElementById("subject").value;
