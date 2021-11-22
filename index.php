@@ -8,7 +8,7 @@
 	<?php include "components/about.html"; ?>
 	<?php include "components/services.html"; ?>
 	<?php include "components/counter.html"; ?>
-	<?php include "components/portfolio.html"; ?>
+	<?php include "components/portfolio.php"; ?>
 	<?php //testimonials, blog?>
 	<?php include "components/contact.html"; ?>
 </main>
