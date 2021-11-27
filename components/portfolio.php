@@ -23,8 +23,8 @@ generate_portfolio_entry("daoc_starter.png", "daoc starter", "DaocStarter", "Gam
 generate_portfolio_entry("ytdl.png", "you tube downloader gui", "YTDLUI", "Desktop Application", "7 Feb. 2017", "https://github.com/simon387/ytdl") .
 generate_portfolio_entry("poster.png", "poster", "Poster", "Web Application", "5 Jan. 2021", "https://github.com/simon387/poster") .
 generate_portfolio_entry("JSCPanelManager.png", "JSCPanelManager", "JSCPanelManager", "cPanel automation", "27 Nov. 2017", "https://github.com/simon387/JSCPanelManager") .
-generate_portfolio_entry("TS3_screenshot_ubuntu.png", "TS-BOT", "TS-BOT", "LUA plugin Script", "7 Feb. 2017", "https://github.com/simon387/TS-BOT") .
-generate_portfolio_entry("ts-bot-web.png", "ts-bot-web", "TS-BOT-WEB", "Web Application", "28 Feb. 2018", "https://github.com/simon387/ts-bot-web") .
+generate_portfolio_entry("TS3_screenshot_ubuntu.png", "TS-BOT", "TS-BOT", "LUA plugin Script", "7 Feb. 2012", "https://github.com/simon387/TS-BOT") .
+generate_portfolio_entry("ts-bot-web.png", "ts-bot-web", "TS-BOT-WEB", "Web Application", "28 Feb. 2014", "https://github.com/simon387/ts-bot-web") .
 '		</div>
 	</div>
 </section>'
