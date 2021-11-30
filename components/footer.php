@@ -12,7 +12,7 @@ echo(minify_html(
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="copyright-box">
-				<p class="copyright">&copy; Copyright <strong>simonecelia.it</strong>. All Rights Reserved. ' . $version . '
+				<p class="copyright">&copy; Copyright <strong>simonecelia.it</strong>. All Rights Reserved. <a class="footer-link" target="_blank" href="changelog.txt">' . $version . '</a>
 				<div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
 			</div>
 		</div>
