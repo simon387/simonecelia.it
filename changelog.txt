@@ -1,5 +1,8 @@
-Version 1.3.23
+Version 1.3.24
 - fix mobile background
+
+Version 1.3.23
+- added link to this file on footer
 
 Version 1.3.22
 - update counters
