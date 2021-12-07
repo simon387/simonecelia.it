@@ -1295,3 +1295,15 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+/* custom
+ *
+ */
+.bg-img {
+  background-image: url(../img/intro-bg.jpg);
+}
+@media (max-width: 1024px) {
+    .bg-img {
+        background-image: url(../img/intro-bg-mobile.jpg);
+    }
+}
