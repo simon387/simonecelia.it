@@ -1,3 +1,6 @@
+Version 1.3.25
+- added social tik tok
+
 Version 1.3.24
 - fix mobile background
 
