@@ -21,9 +21,6 @@ class Message
 		$stmt->bindParam(":fromSubject", $subject);
 		$stmt->bindParam(":fromMessage", $message);
 
-		if ($stmt->execute()) {
-			return true;
-		}
-		return false;
+	 return $stmt->execute();
 	}
 }
