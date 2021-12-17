@@ -3,7 +3,7 @@
 My personal site repository www.simonecelia.it
 
 + Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-+ PHP: 7.3
++ PHP: 7.4+
 + DB: mysql / mariadb
 
 ---
