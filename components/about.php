@@ -15,7 +15,7 @@
 									<div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Simone Celia</span></p>
 										<p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
-										<p><span class="title-s">Email: </span> <span><a href="mailto:simone.celia@simonecelia.it">simone.celia@simonecelia.it</a></span></p>
+										<p><span class="title-s">Email: </span> <span><a href="mailto:<?=EMAIL ?>"><?=EMAIL ?></a></span></p>
 										<p><span class="title-s">Phone: </span> <span>(+39) 3403909232</span></p>
 										<p><span class="title-s">Phone: </span> <span>(+34) 644798608</span></p>
 									</div>
