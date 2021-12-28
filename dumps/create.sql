@@ -1,10 +1,10 @@
---
+-- schema
 create database simonecelia;
 
--- auto-generated definition
+-- table
 create table message
 (
-    id            int auto_increment        primary key,
+    id            int auto_increment                    primary key,
     fromName      varchar(256)                          null,
     fromEmail     varchar(256)                          null,
     fromSubject   varchar(256)                          null,
