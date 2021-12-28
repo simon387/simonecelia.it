@@ -7,6 +7,14 @@ My personal site repository www.simonecelia.it
 + DB: mysql / mariadb
 
 ---
+## dev info
++ ```.github/``` folder contains CI/CD logic.
++ ```docs/``` folder contains template backups.
++ ```dumps/``` folder contains the script to create the database and the table(s).
++ ```requests/``` folder contains repeteable tests for dev and prod enviroments.
++ ```deploy_localhost.*``` are script for localhost deploy and tests.
+
+---
 ## config.php example
 ```injectablephp
 <?php
