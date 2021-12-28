@@ -1,16 +1,5 @@
-### test insert local
-POST {{localUrl}}controllers/message.php
-Content-Type: application/json
-
-{
-  "name" : "gatto",
-  "email" : "gatto",
-  "subject" : "gatto",
-  "message" : "gatto"
-}
-
-### test insert prod
-POST {{prodUrl}}controllers/message.php
+### test insert message
+POST {{baseUrl}}controllers/message.php
 Content-Type: application/json
 
 {
