@@ -55,6 +55,7 @@ generate_portfolio_entry("TS3_screenshot_ubuntu.png", "TS-BOT", "TS-BOT", "LUA p
 generate_portfolio_entry("zalexofficial.jpg", "zalexofficial", "Zalex Official", "Web Application", "17 Dec. 2021", "https://zalexofficial.com") .
 generate_portfolio_entry("ts-bot-web.png", "ts-bot-web", "TS-BOT-WEB", "Web Application", "28 Feb. 2014", "https://github.com/simon387/ts-bot-web") .
 generate_portfolio_entry("grenya.jpg", "grenyaobrador", "grenyaobrador.es", "Web Application", "16 Jan. 2022", "https://www.grenyaobrador.es") .
+generate_portfolio_entry("simonecelia.png", "simonecelia", "simonecelia.it", "Web Application", "3 Nov. 2021", "https://www.simonecelia.it") .
 '		</div>
 	</div>
 </section>'
