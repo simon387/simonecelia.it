@@ -31,11 +31,11 @@
 								<div class="progress">
 									<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
-								<span>JAVASCRIPT</span> <span class="pull-right">75%</span>
+								<span>JAVASCRIPT</span> <span class="pull-right">90%</span>
 								<div class="progress">
 									<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
-								<span>PhP</span> <span class="pull-right">60%</span>
+								<span>PhP</span> <span class="pull-right">80%</span>
 								<div class="progress">
 									<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>

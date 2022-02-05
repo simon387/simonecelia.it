@@ -6,12 +6,13 @@
 				<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
 				<li><a class="nav-link scrollto" href="#about">About</a></li>
 				<li><a class="nav-link scrollto" href="#services">Services</a></li>
-				<li><a class="nav-link scrollto " href="#work">Work</a></li>
+				<li><a class="nav-link scrollto" href="#work">Work</a></li>
 				<li class="dropdown"><a href="#"><span>Tools</span> <i class="bi bi-chevron-down"></i></a>
 					<ul>
 						<li><a target="_blank" href="/poster">Poster</a></li>
 						<li><a target="_blank" href="/components/spring_cron_generator.html">Spring Cron Generator</a></li>
 						<li><a target="_blank" href="https://github.com/simon387/notes">Dev Notes</a></li>
+						<li><a target="_blank" href="https://github.com/users/simon387/projects/1">Personal TODO</a></li>
 					</ul>
 				</li>
 				<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
