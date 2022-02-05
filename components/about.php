@@ -25,19 +25,19 @@
 								<p class="title-s">Skill</p>
 								<span>Problem Solving</span> <span class="pull-right">95%</span>
 								<div class="progress">
-									<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 								<span>Java</span> <span class="pull-right">90%</span>
 								<div class="progress">
-									<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 								<span>JAVASCRIPT</span> <span class="pull-right">90%</span>
 								<div class="progress">
-									<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 								<span>PhP</span> <span class="pull-right">80%</span>
 								<div class="progress">
-									<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 							</div>
 						</div>
