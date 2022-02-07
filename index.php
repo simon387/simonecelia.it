@@ -1,7 +1,9 @@
 <?php include "util/constants.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <?php include "components/head.html"; ?>
+</head>
 <body>
 <?php include "components/header.php"; ?>
 <?php include "components/hero.html"; ?>
