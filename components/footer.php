@@ -4,8 +4,7 @@ $f = fopen("changelog.txt", 'r');
 $version = fgets($f);
 fclose($f);
 
-echo(minify_html(
-'<footer>
+echo(minify_html('<footer>
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12">

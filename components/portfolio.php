@@ -29,8 +29,7 @@ function generate_portfolio_entry($asset, $alt, $title, $category, $date, $link)
 	</div>';
 }
 
-echo(minify_html(
-'<section id="work" class="portfolio-mf sect-pt4 route">
+echo(minify_html('<section id="work" class="portfolio-mf sect-pt4 route">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
