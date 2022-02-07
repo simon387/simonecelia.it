@@ -1,7 +1,6 @@
 <?php
 
-echo(minify_html('
-<section id="about" class="about-mf sect-pt4 route">
+echo(minify_html('<section id="about" class="about-mf sect-pt4 route">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
