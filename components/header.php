@@ -1,3 +1,8 @@
+<?php
+
+include_once 'util/minify.php';
+
+echo(minify_html('
 <header id="header" class="fixed-top">
 	<div class="container d-flex align-items-center justify-content-between">
 		<h1 class="logo"><a href="#"><?=TITLE ?></a></h1>
@@ -11,6 +16,7 @@
 					<ul>
 						<li><a target="_blank" href="/poster">Poster</a></li>
 						<li><a target="_blank" href="/components/spring_cron_generator.html">Spring Cron Generator</a></li>
+						<li><a target="_blank" href="https://regex101.com">Regex101</a></li>
 						<li><a target="_blank" href="https://github.com/simon387/notes">Dev Notes</a></li>
 						<li><a target="_blank" href="https://github.com/users/simon387/projects/1">Personal TODO</a></li>
 					</ul>
@@ -20,4 +26,4 @@
 			<i class="bi bi-list mobile-nav-toggle"></i>
 		</nav>
 	</div>
-</header>
+</header>'));

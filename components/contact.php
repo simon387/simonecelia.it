@@ -1,4 +1,6 @@
-<section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+<?php
+
+echo(minify_html('<section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
 	<div class="overlay-mf"></div>
 	<div class="container">
 		<div class="row">
@@ -53,9 +55,9 @@
 									<p class="lead">Feel free to contact me!</p>
 									<ul class="list-ico">
 										<li><span class="bi bi-geo-alt"></span> ITALY and SPAIN</li>
-										<li><span class="bi bi-phone"></span> <?=PHONE1 ?></li>
-										<li><span class="bi bi-phone"></span> <?=PHONE2 ?></li>
-										<li><span class="bi bi-envelope"></span> <a target="_blank" href="mailto:<?=EMAIL ?>"><?=EMAIL ?></a></li>
+										<li><span class="bi bi-phone"></span> ' . PHONE1 . '></li>
+										<li><span class="bi bi-phone"></span> ' . PHONE2 . '></li>
+										<li><span class="bi bi-envelope"></span> <a target="_blank" href="mailto:' . EMAIL . '">' . EMAIL . '</a></li>
 									</ul>
 								</div>
 								<div class="socials">
@@ -63,7 +65,7 @@
 										<li><a target="_blank" href="https://www.facebook.com/simone.celia.98/"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
 										<li><a target="_blank" href="https://www.instagram.com/_s1m0n387/"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
 										<li><a target="_blank" href="https://twitter.com/Simone_Celia"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-										<li><a target="_blank" href="<?=LINKEDIN ?>"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+										<li><a target="_blank" href="' . LINKEDIN . '"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
 										<li><a target="_blank" href="https://github.com/simon387/"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
 										<li><a target="_blank" href="https://www.tiktok.com/@simone.celia?lang=it-IT"><span class="ico-circle">
 										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
@@ -78,4 +80,4 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section>'));

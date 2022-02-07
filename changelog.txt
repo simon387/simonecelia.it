@@ -1,3 +1,7 @@
+Version 1.3.42
+- added regex101
+- added missing php compression
+
 Version 1.3.41
 - fix percentages
 
