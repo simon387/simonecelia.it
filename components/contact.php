@@ -55,8 +55,8 @@ echo(minify_html('<section id="contact" class="paralax-mf footer-paralax bg-imag
 									<p class="lead">Feel free to contact me!</p>
 									<ul class="list-ico">
 										<li><span class="bi bi-geo-alt"></span> ITALY and SPAIN</li>
-										<li><span class="bi bi-phone"></span> ' . PHONE1 . '></li>
-										<li><span class="bi bi-phone"></span> ' . PHONE2 . '></li>
+										<li><span class="bi bi-phone"></span> ' . PHONE1 . '</li>
+										<li><span class="bi bi-phone"></span> ' . PHONE2 . '</li>
 										<li><span class="bi bi-envelope"></span> <a target="_blank" href="mailto:' . EMAIL . '">' . EMAIL . '</a></li>
 									</ul>
 								</div>
