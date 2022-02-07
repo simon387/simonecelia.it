@@ -5,7 +5,7 @@ include_once 'util/minify.php';
 echo(minify_html('
 <header id="header" class="fixed-top">
 	<div class="container d-flex align-items-center justify-content-between">
-		<h1 class="logo"><a href="#"><?=TITLE ?></a></h1>
+		<h1 class="logo"><a href="#">' . TITLE . '</a></h1>
 		<nav id="navbar" class="navbar unselectable">
 			<ul>
 				<li><a class="nav-link scrollto active" href="#hero">Home</a></li>
