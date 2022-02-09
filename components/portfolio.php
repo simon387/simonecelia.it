@@ -7,7 +7,7 @@ function generate_portfolio_entry($asset, $alt, $title, $category, $date, $link)
 		<div class="work-box">
 			<a href="assets/img/' . $asset . '" data-gallery="portfolioGallery" class="portfolio-lightbox">
 				<div class="work-img">
-					<img loading="lazy" src="assets/img/' . $asset . '"  alt="' . $alt . '" class="img-fluid">
+					<img loading="eager" src="assets/img/' . $asset . '" alt="' . $alt . '" class="img-fluid">
 				</div>
 			</a>
 			<div class="work-content">

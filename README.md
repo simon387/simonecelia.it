@@ -30,3 +30,6 @@ class Config
 	static $smtp_email = 'simone.celia@simonecelia.it';
 }
 ```
+
+## Useful links
++ https://www.iloveimg.com
