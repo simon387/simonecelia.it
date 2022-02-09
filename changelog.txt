@@ -1,3 +1,6 @@
+Version 1.3.47
+- graphic fix
+
 Version 1.3.46
 - fix bug go to contacts scroll to
 - rmved lazy loading, but compressed img
