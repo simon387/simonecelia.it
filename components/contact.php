@@ -35,6 +35,11 @@ echo(minify_html('<section id="contact" class="paralax-mf footer-paralax bg-imag
 													<textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required maxlength="8192"></textarea>
 												</div>
 											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="checkbox" name="accept" id="accept-checkbox" required>GDPR Agreement - I consent to having this website store my submitted information so they can respond to my inquiry</input>
+												</div>
+											</div>
 											<div class="col-md-12 text-center my-3">
 												<div class="loading">Loading</div>
 												<div class="error-message"></div>
