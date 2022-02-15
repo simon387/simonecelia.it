@@ -6,15 +6,15 @@ include_once '../config/config.php';
 
 class MessageService
 {
-	private $database;
-	private $connection;
-	private $message;
+//	private $database;
+//	private $connection;
+//	private $message;
 
 	public function __construct()
 	{
-		$this->database = new Database();
-		$this->connection = $this->database->getConnection();
-		$this->message = new Message($this->connection);
+//		$this->database = new Database();
+//		$this->connection = $this->database->getConnection();
+//		$this->message = new Message($this->connection);
 	}
 
 	function sendMessage($data): bool
@@ -28,7 +28,7 @@ class MessageService
 			$ignore_sending_email = $this->sendMail($data->name, $data->email, $data->subject, $data->message);
 		}
 
-		$saved_to_db = $this->message->create("$data->name", "$data->email", "$data->subject", "$data->message");
+		$saved_to_db = true;// WE DON'T SAVE USERS DATA $this->message->create("$data->name", "$data->email", "$data->subject", "$data->message");
 
 		return $ignore_sending_email && $saved_to_db;
 	}
