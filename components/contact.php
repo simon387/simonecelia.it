@@ -67,6 +67,7 @@ echo(minify_html('<section id="contact" class="paralax-mf footer-paralax bg-imag
 								</div>
 								<div class="socials">
 									<ul>
+										<li><a target="_blank" href="https://stackoverflow.com/users/7534931/simone-celia"><span class="ico-circle"><i class="bi bi-stack"></i></span></a></li>
 										<li><a target="_blank" href="https://www.facebook.com/simone.celia.98/"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
 										<li><a target="_blank" href="https://www.instagram.com/_s1m0n387/"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
 										<li><a target="_blank" href="https://twitter.com/Simone_Celia"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
