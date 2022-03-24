@@ -18,8 +18,8 @@ echo(minify_html('<section id="about" class="about-mf sect-pt4 route">
 										<p><span class="title-s">Name: </span> <span>Simone Celia</span></p>
 										<p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
 										<p><span class="title-s">Email: </span> <span><a target="_blank" href="mailto:' . EMAIL .'">' . EMAIL .'</a></span></p>
-										<p><span class="title-s">Phone: </span> <span>' . PHONE1 .'</span></p>
-										<p><span class="title-s">Phone: </span> <span>' . PHONE2 .'</span></p>
+										<p><span class="title-s">Phone: </span> <span><a href="tel:' . PHONE1 . '">' . PHONE1 . '</a></span></p>
+										<p><span class="title-s">Phone: </span> <span><a href="tel:' . PHONE2 . '">' . PHONE2 . '</a></span></p>
 									</div>
 								</div>
 							</div>
