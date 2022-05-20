@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>The Shame List</h1>
-<p>The following numbers are of stalkers, phishing programs, thieves, ecc...</p>
+<p>The following numbers are from stalkers, phishing programs, thieves, ecc...</p>
 <ul>
 	<li>+390965351016</li>
 	<li>+393334485891</li>
