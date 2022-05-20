@@ -58,7 +58,7 @@ echo(minify_html('<section id="contact" class="paralax-mf footer-paralax bg-imag
 								</div>
 								<div class="more-info">
 									<p class="lead">Feel free to contact me!</p>
-									<p class="lead"><b>Warning! Any malicious use of telephone numbers will be reported to the authorities and published <a target="_blank" href="shame.php">here</a>, in the shame list!</b></p>
+									<p class="lead"><b>Warning! Any malicious use of telephone numbers will be reported to the authorities and published <a class="blue-a" target="_blank" href="shame.php">here</a>, in the shame list!</b></p>
 									<ul class="list-ico">
 										<li><span class="bi bi-geo-alt"></span> ITALY and SPAIN</li>
 										<li><span class="bi bi-phone"></span> <a href="tel:' . PHONE1 . '">' . PHONE1 . '</a></li>
