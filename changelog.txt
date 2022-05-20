@@ -1,8 +1,11 @@
-1.4.1
+Version 1.4.2
+- fix versioning bug
+
+Version 1.4.1
 - typo
 
-1.4.0
-- added phishing number section
+Version 1.4.0
+- added shame list page
 
 Version 1.3.52
 - added phone href
