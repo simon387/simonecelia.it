@@ -41,6 +41,10 @@ echo(minify_html('<section id="about" class="about-mf sect-pt4 route">
 								<div class="progress">
 									<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
+								<span>Python</span><span class="pull-right"> 80%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
 							</div>
 						</div>
 						<div class="col-md-6">
