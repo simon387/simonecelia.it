@@ -17,6 +17,7 @@ echo(minify_html('<header id="header" class="fixed-top">
 						<li><a target="_blank" href="/components/spring_cron_generator.html">Spring Cron Generator</a></li>
 						<li><a target="_blank" href="https://regex101.com">Regex101</a></li>
 						<li><a target="_blank" href="https://www.base64decode.org">base64decode</a></li>
+						<li><a target="_blank" href="https://curlconverter.com">curlconverter</a></li>
 						<li><a target="_blank" href="https://github.com/simon387/notes">Dev Notes</a></li>
 						<li><a target="_blank" href="https://github.com/users/simon387/projects/1">Personal TODO</a></li>
 					</ul>
