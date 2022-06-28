@@ -1,3 +1,18 @@
+Version 1.4.8
+- typos fix
+
+Version 1.4.7
+- added https://jsonlint.com
+
+Version 1.4.6
+- added https://curlconverter.com
+
+Version 1.4.5
+- added https://www.base64decode.org
+
+Version 1.4.4
+- added python skill
+
 Version 1.4.3
 - gui fix
 
