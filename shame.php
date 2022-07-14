@@ -46,6 +46,8 @@
 	<li>+393332586437 enel energia</li>
 	<li>+390362906320 truffa amazon</li>
 	<li>+39031791106 truffa amazon</li>
+	<li>+393511690400 truffa amazon</li>
+	<li>https://monteps.eu/controllo phising</li>
 </ul>
 </body>
 </html>
