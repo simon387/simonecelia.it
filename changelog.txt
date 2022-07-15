@@ -1,3 +1,6 @@
+Version 1.4.9
+- added Amazon offerte
+
 Version 1.4.8
 - typos fix
 
