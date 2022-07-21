@@ -1,4 +1,6 @@
-<section id="services" class="services-mf pt-5 route">
+<?php
+
+echo(minify_html('<section id="services" class="services-mf pt-5 route">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -17,9 +19,7 @@
 					</div>
 					<div class="service-content">
 						<h2 class="s-title">Web Design</h2>
-						<p class="s-description text-center">
-						
-						</p>
+						<p class="s-description text-center"></p>
 					</div>
 				</div>
 			</div>
@@ -30,9 +30,7 @@
 					</div>
 					<div class="service-content">
 						<h2 class="s-title">Web Development</h2>
-						<p class="s-description text-center">
-						
-						</p>
+						<p class="s-description text-center"></p>
 					</div>
 				</div>
 			</div>
@@ -43,9 +41,7 @@
 					</div>
 					<div class="service-content">
 						<h2 class="s-title">Photography</h2>
-						<p class="s-description text-center">
-						
-						</p>
+						<p class="s-description text-center"></p>
 					</div>
 				</div>
 			</div>
@@ -56,9 +52,7 @@
 					</div>
 					<div class="service-content">
 						<h2 class="s-title">Responsive Design</h2>
-						<p class="s-description text-center">
-						
-						</p>
+						<p class="s-description text-center"></p>
 					</div>
 				</div>
 			</div>
@@ -69,9 +63,7 @@
 					</div>
 					<div class="service-content">
 						<h2 class="s-title">Graphic Design</h2>
-						<p class="s-description text-center">
-						
-						</p>
+						<p class="s-description text-center"></p>
 					</div>
 				</div>
 			</div>
@@ -82,12 +74,10 @@
 					</div>
 					<div class="service-content">
 						<h2 class="s-title">Marketing Services</h2>
-						<p class="s-description text-center">
-						
-						</p>
+						<p class="s-description text-center"></p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
+</section>'));
