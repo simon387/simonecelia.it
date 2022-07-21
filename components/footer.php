@@ -4,7 +4,8 @@ $f = fopen("changelog.txt", 'r');
 $version = fgets($f);
 fclose($f);
 
-echo(minify_html('<footer>
+minify_html('
+<footer>
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12">
@@ -18,4 +19,4 @@ echo(minify_html('<footer>
 </footer>
 <div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>'
-));
+);

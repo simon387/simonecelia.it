@@ -1,3 +1,6 @@
+Version 1.4.12
+- fix bug missing head
+
 Version 1.4.11
 - code refactoring
 

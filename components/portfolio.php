@@ -47,7 +47,8 @@ $entries = [
 
 shuffle($entries);
 
-echo(minify_html('<section id="work" class="portfolio-mf sect-pt4 route">
+minify_html('
+<section id="work" class="portfolio-mf sect-pt4 route">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -61,4 +62,4 @@ echo(minify_html('<section id="work" class="portfolio-mf sect-pt4 route">
 		<div class="row">' . implode('', $entries) . '</div>
 	</div>
 </section>'
-));
+);

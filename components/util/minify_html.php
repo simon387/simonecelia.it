@@ -22,5 +22,5 @@ function minify_html($html)
 			"$1>",
 			"=$1");
 
-	return preg_replace($search, $replace, $html);
+	echo preg_replace($search, $replace, $html);
 }
