@@ -1,6 +1,7 @@
 <?php
 
-echo(minify_html('<section id="services" class="services-mf pt-5 route">
+minify_html('
+<section id="services" class="services-mf pt-5 route">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -80,4 +81,4 @@ echo(minify_html('<section id="services" class="services-mf pt-5 route">
 			</div>
 		</div>
 	</div>
-</section>'));
+</section>');

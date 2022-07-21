@@ -1,9 +1,7 @@
 <?php include "util/constants.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<?php include "components/head.html"; ?>
-</head>
+<?php include "components/head.php"; ?>
 <body>
 <h1>The Shame List</h1>
 <p>The following numbers are from stalkers, phishing programs, thieves, ecc...</p>

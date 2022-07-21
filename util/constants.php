@@ -1,4 +1,7 @@
 <?php
+
+include_once 'components/util/minify_html.php';
+
 const TITLE = "simonecelia.it";
 const EMAIL = "simone.celia@simonecelia.it";
 const PHONE1 = "+39 3403909232";
