@@ -46,7 +46,6 @@ $entries = [
 ];
 
 shuffle($entries);
-$entriesStrings = implode('', $entries);
 
 echo(minify_html('<section id="work" class="portfolio-mf sect-pt4 route">
 	<div class="container">
@@ -59,7 +58,7 @@ echo(minify_html('<section id="work" class="portfolio-mf sect-pt4 route">
 				</div>
 			</div>
 		</div>
-		<div class="row">' . $entriesStrings . '</div>
+		<div class="row">' . implode('', $entries) . '</div>
 	</div>
 </section>'
 ));
