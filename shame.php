@@ -48,6 +48,14 @@
 	<li>https://monteps.eu/controllo phising</li>
 	<li>+393334734941</li>
 	<li>+393783032904 enel energia</li>
+	<li>+393389425056</li>
+	<li>+393347089063 truffa amazon</li>
+	<li>+393389172362 truffa amazon</li>
+	<li>+393389862679 truffa amazon</li>
+	<li>+393389147330 truffa amazon</li>
+	<li>+393389713247 truffa amazon</li>
+	<li>+393389547705 truffa amazon</li>
+	<li>+393389321225 truffa amazon</li>
 </ul>
 </body>
 </html>
