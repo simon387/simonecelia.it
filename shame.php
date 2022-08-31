@@ -59,6 +59,8 @@
 	<li>+39348716715</li>
 	<li>+393510142764 truffa amazon automatica</li>
 	<li>+393501600585 ladri truffa amazon</li>
+	<li>+393389934594 ladri truffa amazon</li>
+	<li>+393389715259 ladri truffa amazon</li>
 </ul>
 </body>
 </html>
