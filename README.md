@@ -7,7 +7,9 @@ My personal site repository www.simonecelia.it
 + DB: mysql / mariadb
 
 ---
+
 ## dev info
+
 + ```.github/``` folder contains CI/CD logic.
 + ```docs/``` folder contains template backups.
 + ```dumps/``` folder contains the script to create the database and the table(s).
@@ -15,7 +17,11 @@ My personal site repository www.simonecelia.it
 + ```deploy_localhost.*``` are script for localhost deploy and tests.
 
 ---
+
 ## config.php example
+
+docker
+
 ```injectablephp
 <?php
 
@@ -31,5 +37,23 @@ class Config
 }
 ```
 
+localhost
+
+```injectablephp
+<?php
+
+class Config
+{
+	static $db_host = 'localhost';
+	static $db_name = 'simonecelia';
+	static $db_username  = 'root';
+	static $db_password  = 'root';
+	static $db_statement_0  = "SET GLOBAL time_zone='Europe/Madrid'";
+	static $send_email = false;
+	static $smtp_email = 'simone.celia@simonecelia.it';
+}
+```
+
 ## Useful links
+
 + https://www.iloveimg.com
