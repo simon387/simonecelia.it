@@ -7,8 +7,12 @@ $ip = getenv('HTTP_CLIENT_IP') ?:
 						getenv('HTTP_FORWARDED_FOR') ?:
 								getenv('HTTP_FORWARDED') ?:
 										getenv('REMOTE_ADDR');
+$details = "";
+foreach ($_SERVER as $parm => $value) {
+	$details .= "$parm = '$value'\n";
+}
 $clientService = new ClientService();
-$clientService->save($ip);
+$clientService->save($ip, $details);
 ?>
 
 <!DOCTYPE html>
