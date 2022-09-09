@@ -1,5 +1,5 @@
-<?php include "util/constants.php"; ?>
 <?php
+include_once "util/constants.php";
 include_once 'be/services/ClientService.php';
 $ip = getenv('HTTP_CLIENT_IP') ?:
 		getenv('HTTP_X_FORWARDED_FOR') ?:
