@@ -1,5 +1,4 @@
 <?php
-
 minify_html('
 <section id="about" class="about-mf sect-pt4 route">
 	<div class="container">

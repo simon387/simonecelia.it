@@ -1,5 +1,4 @@
 <?php
-
 minify_html('
 <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
 	<div class="overlay-mf"></div>
