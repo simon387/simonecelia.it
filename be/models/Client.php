@@ -10,12 +10,13 @@ class Client
 		$this->connection = $connection;
 	}
 
-	function create($ip, $details): bool
+	function create($ip, $details, $type): bool
 	{
-		$query = "INSERT INTO " . $this->table_name . " (ip, details) VALUES (:ip, :details)";
+		$query = "INSERT INTO " . $this->table_name . " (ip, type, details) VALUES (:ip, :type, :details)";
 		$stmt = $this->connection->prepare($query);
 
 		$stmt->bindParam(":ip", $ip);
+		$stmt->bindParam(":type", $type);
 		$stmt->bindParam(":details", $details);
 
 		return $stmt->execute();
