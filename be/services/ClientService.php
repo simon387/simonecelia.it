@@ -17,9 +17,9 @@ class ClientService
 		$this->client = new Client($this->connection);
 	}
 
-	function save($ip, $details, $type)
+	function save($ip, $details, $type): bool
 	{
-		$this->client->create($ip, $details, $type);
+		return $this->client->create($ip, $details, $type);
 	}
 
 	function saveClient($data): bool
@@ -27,6 +27,6 @@ class ClientService
 		if (empty($data->ip) || empty($data->details)) {
 			return false;
 		}
-		return $this->client->create($data->ip, $data->details, "f");
+		return $this->save($data->ip, $data->details, "f");
 	}
 }

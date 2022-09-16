@@ -231,7 +231,7 @@
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-	let info = {
+	const info = {
 		timeOpened: new Date(),
 		timezone: (new Date()).getTimezoneOffset() / 60,
 		pageon: window.location.pathname,
@@ -260,13 +260,11 @@ function init() {
 		scrColorDepth: screen.colorDepth,
 		scrPixelDepth: screen.pixelDepth,
 	};
-	info = JSON.stringify(info).toString();
-
 	fetch('be/controllers/client.php', {
 		method: 'POST',
 		body: JSON.stringify({
 			ip: 'n/a',
-			details: info,
+			details: JSON.stringify(info).toString(),
 		}),
 		headers: {
 			'Content-type': 'application/json; charset=UTF-8'

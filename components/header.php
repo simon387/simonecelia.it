@@ -1,5 +1,4 @@
 <?php
-
 minify_html('
 <header id="header" class="fixed-top">
 	<div class="container d-flex align-items-center justify-content-between">
@@ -20,6 +19,7 @@ minify_html('
 						<li><a target="_blank" href="https://curlconverter.com">Curl Converter</a></li>
 						<li><a target="_blank" href="https://github.com/simon387/notes">Dev Notes</a></li>
 						<li><a target="_blank" href="https://github.com/users/simon387/projects/1">Personal TODO</a></li>
+						<li><a target="_blank" href="/adminer.php">Adminer</a></li>
 					</ul>
 				</li>
 				<li><a class="nav-link scrollto" href="#contact">Contact</a></li>

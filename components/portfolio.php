@@ -1,5 +1,4 @@
 <?php
-
 function generate_portfolio_entry($asset, $alt, $title, $category, $date, $link): string
 {
 	return

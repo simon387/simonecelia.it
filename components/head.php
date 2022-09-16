@@ -1,5 +1,4 @@
 <?php
-
 minify_html('
 <head>
 <meta charset="utf-8">
