@@ -1,3 +1,6 @@
+Version 1.4.18
+- added more client info details
+
 Version 1.4.17
 - code refactoring
 

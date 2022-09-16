@@ -17,6 +17,7 @@ create table client
 (
     id      int auto_increment primary key,
     ip      varchar(256)                          not null,
+    type    varchar(1)                            not null,
     details varchar(8192)                         not null,
     visited timestamp default current_timestamp() not null
 )

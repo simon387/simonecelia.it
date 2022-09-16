@@ -8,3 +8,12 @@ Content-Type: application/json
   "subject" : "subject",
   "message" : "message"
 }
+
+### test insert client
+POST {{baseUrl}}controllers/client.php
+Content-Type: application/json
+
+{
+  "ip" : "localhost",
+  "details" : "kek"
+}

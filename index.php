@@ -12,7 +12,7 @@ foreach ($_SERVER as $parm => $value) {
 	$details .= "$parm = '$value'\n";
 }
 $clientService = new ClientService();
-$clientService->save($ip, $details);
+$clientService->save($ip, $details, "b");
 ?>
 
 <!DOCTYPE html>
