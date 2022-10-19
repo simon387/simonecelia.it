@@ -14,6 +14,5 @@ POST {{baseUrl}}controllers/client.php
 Content-Type: application/json
 
 {
-  "ip" : "localhost",
   "details" : "kek"
 }

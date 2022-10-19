@@ -1,3 +1,6 @@
+Version 1.4.20
+- added ip calculation to fe calls
+
 Version 1.4.19
 - code optimization
 - added adminer link
