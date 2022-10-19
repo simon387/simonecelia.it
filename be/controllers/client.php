@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 $clientServices = new ClientService();
 $data = json_decode(file_get_contents("php://input"));
 
-if ($clientServices->saveClient($data)) {
+if ($clientServices->saveFromFrontend($data)) {
 	http_response_code(200);
 	echo json_encode(array("response" => "Client created"));
 } else {

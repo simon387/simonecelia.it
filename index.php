@@ -2,7 +2,7 @@
 include_once "util/constants.php";
 include_once 'be/services/ClientService.php';
 $clientService = new ClientService();
-$clientService->save("b");
+$clientService->saveFromBackend();
 ?>
 
 <!DOCTYPE html>
