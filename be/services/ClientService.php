@@ -17,20 +17,17 @@ class ClientService
 		$this->client = new Client($this->connection);
 	}
 
-	function save($type): bool
+	function saveFromBackend(): bool
 	{
-		$ip = $this->getIp();
-		$details = $this->getDetails();
-		return $this->client->create($ip, $details, $type);
+		return $this->client->create($this->getIp(), $this->getDetails(), "b");
 	}
 
-	function saveClient($data): bool
+	function saveFromFrontend($data): bool
 	{
 		if (empty($data->details)) {
 			return false;
 		}
-		$ip = $this->getIp();
-		return $this->client->create($ip, $data->details, "f");
+		return $this->client->create($this->getIp(), $data->details, "f");
 	}
 
 	function getIp()
