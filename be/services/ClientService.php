@@ -17,16 +17,38 @@ class ClientService
 		$this->client = new Client($this->connection);
 	}
 
-	function save($ip, $details, $type): bool
+	function save($type): bool
 	{
+		$ip = $this->getIp();
+		$details = $this->getDetails();
 		return $this->client->create($ip, $details, $type);
 	}
 
 	function saveClient($data): bool
 	{
-		if (empty($data->ip) || empty($data->details)) {
+		if (empty($data->details)) {
 			return false;
 		}
-		return $this->save($data->ip, $data->details, "f");
+		$ip = $this->getIp();
+		return $this->client->create($ip, $data->details, "f");
+	}
+
+	function getIp()
+	{
+		return getenv('HTTP_CLIENT_IP') ?:
+			getenv('HTTP_X_FORWARDED_FOR') ?:
+				getenv('HTTP_X_FORWARDED') ?:
+					getenv('HTTP_FORWARDED_FOR') ?:
+						getenv('HTTP_FORWARDED') ?:
+							getenv('REMOTE_ADDR');
+	}
+
+	function getDetails(): string
+	{
+		$details = "";
+		foreach ($_SERVER as $parm => $value) {
+			$details .= "$parm = '$value'\n";
+		}
+		return $details;
 	}
 }

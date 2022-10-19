@@ -263,7 +263,6 @@ function init() {
 	fetch('be/controllers/client.php', {
 		method: 'POST',
 		body: JSON.stringify({
-			ip: 'n/a',
 			details: JSON.stringify(info).toString(),
 		}),
 		headers: {

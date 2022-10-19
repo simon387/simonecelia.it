@@ -1,18 +1,8 @@
 <?php
 include_once "util/constants.php";
 include_once 'be/services/ClientService.php';
-$ip = getenv('HTTP_CLIENT_IP') ?:
-		getenv('HTTP_X_FORWARDED_FOR') ?:
-				getenv('HTTP_X_FORWARDED') ?:
-						getenv('HTTP_FORWARDED_FOR') ?:
-								getenv('HTTP_FORWARDED') ?:
-										getenv('REMOTE_ADDR');
-$details = "";
-foreach ($_SERVER as $parm => $value) {
-	$details .= "$parm = '$value'\n";
-}
 $clientService = new ClientService();
-$clientService->save($ip, $details, "b");
+$clientService->save("b");
 ?>
 
 <!DOCTYPE html>
