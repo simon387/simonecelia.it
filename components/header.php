@@ -19,6 +19,7 @@ minify_html('
 						<li><a target="_blank" href="https://curlconverter.com">Curl Converter</a></li>
 						<li><a target="_blank" href="https://github.com/simon387/notes">Dev Notes</a></li>
 						<li><a target="_blank" href="https://github.com/users/simon387/projects/1">Personal TODO</a></li>
+						<li><a target="_blank" href="https://macaddress.io">macaddress.io</a></li>
 						<li><a target="_blank" href="/adminer.php">Adminer</a></li>
 					</ul>
 				</li>
