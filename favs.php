@@ -8,6 +8,7 @@
 <h2>thinkopen</h2>
 <ul>
 	<li><a href="https://timesheet.thinkopen.it/mip/jsp/home.jsp?m_cParameterCache=jwvcr52blu">timesheet</a></li>
+	<li><a href="https://studiorossipaghe.com/HR/jsp/login.jsp">cedolini</a></li>
 </ul>
 <h2>dev</h2>
 <ul>
