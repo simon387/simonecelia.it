@@ -1,3 +1,6 @@
+Version 1.4.23
+- fix typo on link
+
 Version 1.4.22
 - added https://macaddress.io link
 
