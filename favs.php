@@ -16,6 +16,7 @@
 	<li><a href="https://github.com/simon387">github</a></li>
 	<li><a href="https://www.shellcheck.net">shellcheck</a></li>
 	<li><a href="https://www.pythonanywhere.com">pythonanywhere.com</a></li>
+	<li><a href="https://www.coderstool.com/querystring-encode">querystring-encode</a></li>
 </ul>
 <h2>hack</h2>
 <ul>
