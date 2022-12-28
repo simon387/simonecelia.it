@@ -9,7 +9,7 @@ minify_html('
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="copyright-box">
-				<p class="copyright">&copy; Copyright <strong>' . TITLE . '</strong> 2022. All Rights Reserved. <a class="footer-link" target="_blank" href="changelog.txt">' . $version . '</a>
+				<p class="copyright">&copy; Copyright <strong>' . TITLE . '</strong> 2023. All Rights Reserved. <a class="footer-link" target="_blank" href="changelog.txt">' . $version . '</a>
 				<div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
 			</div>
 		</div>
