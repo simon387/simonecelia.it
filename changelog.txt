@@ -1,3 +1,6 @@
+Version 1.4.25
+- added FoldoBot portfolio
+
 Version 1.4.24
 - updated fiscal year
 

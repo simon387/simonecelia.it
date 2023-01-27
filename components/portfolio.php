@@ -41,7 +41,8 @@ $entries = [
 	generate_portfolio_entry("ts-bot-web.png", "ts-bot-web", "TS-BOT-WEB", "Web Application", "28 Feb. 2014", "https://github.com/simon387/ts-bot-web"),
 	generate_portfolio_entry("grenya.jpg", "grenyaobrador", "grenyaobrador.es", "Web Application", "16 Jan. 2022", "https://www.grenyaobrador.es"),
 	generate_portfolio_entry("simonecelia.png", "simonecelia", "simonecelia.it", "Web Application", "3 Nov. 2021", "https://www.simonecelia.it"),
-	generate_portfolio_entry("offerte_amazon.png", "offerte amazon", "Offerte Amazon", "Telegram Application", "15 Jul. 2022", "https://github.com/simon387/offerte_amazon")
+	generate_portfolio_entry("offerte_amazon.png", "offerte amazon", "Offerte Amazon", "Telegram Application", "15 Jul. 2022", "https://github.com/simon387/offerte_amazon"),
+	generate_portfolio_entry("FoldoBot.png", "FoldoBot", "FoldoBot", "Telegram Application", "Jun 14, 2022", "https://github.com/simon387/FoldoBot"),
 ];
 
 shuffle($entries);
