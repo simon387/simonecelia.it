@@ -37,3 +37,10 @@
 <ul>
 	<li><a href="https://andreagaleazzi.com">andreagaleazzi</a></li>
 </ul>
+<h2>pasturo</h2>
+<ul>
+	<li><a href="https://tinder.com/app/recs">ti</a></li>
+	<li><a href="https://badoo.com/encounters">ba</a></li>
+	<li><a href="https://bumble.com/app">bu</a></li>
+	<li><a href="https://it.lovoo.com/welcome/login">lo</a></li>
+</ul>
