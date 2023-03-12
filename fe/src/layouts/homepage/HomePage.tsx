@@ -4,6 +4,7 @@ import {About} from "./components/about/About";
 import {Services} from "./components/services/Services";
 import {Counter} from "./components/counter/Counter";
 import {Portfolio} from "./components/portfolio/Portfolio";
+import {Contact} from "./components/contact/Contact";
 
 export const HomePage = () => {
 
@@ -22,6 +23,7 @@ export const HomePage = () => {
 				<Services/>
 				<Counter/>
 				<Portfolio/>
+				<Contact/>
 			</main>
 		</>
 	);
