@@ -3,6 +3,7 @@ import React, {useEffect} from "react";
 import {About} from "../about/About";
 import {Services} from "../services/Services";
 import {Counter} from "../counter/Counter";
+import {Portfolio} from "../portfolio/Portfolio";
 
 export const HomePage = () => {
 
@@ -20,6 +21,7 @@ export const HomePage = () => {
 				<About/>
 				<Services/>
 				<Counter/>
+				<Portfolio/>
 			</main>
 		</>
 	);
