@@ -5,17 +5,16 @@ import {Redirect, Route, Switch} from "react-router";
 import {HomePage} from "./layouts/homepage/HomePage";
 import {Favs} from "./layouts/favs/Favs";
 import {ShameList} from "./layouts/shamelist/ShameList";
+import {Footer} from "./layouts/footer/Footer";
 
 export const App = () => {
 
 	return (
 		<Switch>
 			<Route path='/' exact>
-				<Redirect to='/home'/>
-			</Route>
-			<Route path='/home'>
 				<Navbar/>
 				<HomePage/>
+				<Footer/>
 			</Route>
 			<Route path='/favs' exact>
 				<Favs/>
