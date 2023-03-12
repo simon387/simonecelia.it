@@ -73,28 +73,28 @@ export const Contact = () => {
 												<li><span className="bi bi-geo-alt"></span> ITALY and SPAIN</li>
 												<li><span className="bi bi-phone"></span> <a href={tel1to}>{constants.phone1}</a></li>
 												<li><span className="bi bi-phone"></span> <a href={tel2to}>{constants.phone1}</a></li>
-												<li><span className="bi bi-envelope"></span> <a target="_blank" href={mailto}>{constants.email}</a></li>
+												<li><span className="bi bi-envelope"></span> <a target="_blank" rel="noreferrer" href={mailto}>{constants.email}</a></li>
 											</ul>
 										</div>
 										<div className="socials">
 											<ul>
-												<li><a target="_blank" href="https://stackoverflow.com/users/7534931/simone-celia"><span className="ico-circle"><i
+												<li><a target="_blank" rel="noreferrer" href="https://stackoverflow.com/users/7534931/simone-celia"><span className="ico-circle"><i
 													className="bi bi-stack"></i></span></a></li>
-												<li><a target="_blank" href="https://www.facebook.com/simone.celia.98/"><span className="ico-circle"><i className="bi bi-facebook"></i></span></a>
+												<li><a target="_blank" rel="noreferrer" href="https://www.facebook.com/simone.celia.98/"><span className="ico-circle"><i className="bi bi-facebook"></i></span></a>
 												</li>
-												<li><a target="_blank" href="https://www.instagram.com/_s1m0n387/"><span className="ico-circle"><i
+												<li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/_s1m0n387/"><span className="ico-circle"><i
 													className="bi bi-instagram"></i></span></a></li>
-												<li><a target="_blank" href="https://twitter.com/Simone_Celia"><span className="ico-circle"><i className="bi bi-twitter"></i></span></a>
+												<li><a target="_blank" rel="noreferrer" href="https://twitter.com/Simone_Celia"><span className="ico-circle"><i className="bi bi-twitter"></i></span></a>
 												</li>
-												<li><a target="_blank" href={constants.linkedin}><span className="ico-circle"><i className="bi bi-linkedin"></i></span></a></li>
-												<li><a target="_blank" href="https://github.com/simon387/"><span className="ico-circle"><i className="bi bi-github"></i></span></a></li>
-												<li><a target="_blank" href="https://www.tiktok.com/@simone.celia?lang=it-IT"><span className="ico-circle">
+												<li><a target="_blank" rel="noreferrer" href={constants.linkedin}><span className="ico-circle"><i className="bi bi-linkedin"></i></span></a></li>
+												<li><a target="_blank" rel="noreferrer" href="https://github.com/simon387/"><span className="ico-circle"><i className="bi bi-github"></i></span></a></li>
+												<li><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@simone.celia?lang=it-IT"><span className="ico-circle">
 											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-tiktok" viewBox="0 0 16 16">
 												<path
 													d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
 											</svg> </span>
 												</a></li>
-												<li><a target="_blank" href="https://t.me/simon387"><span className="ico-circle"><i className="bi bi-telegram"></i></span></a></li>
+												<li><a target="_blank" rel="noreferrer" href="https://t.me/simon387"><span className="ico-circle"><i className="bi bi-telegram"></i></span></a></li>
 											</ul>
 										</div>
 									</div>
