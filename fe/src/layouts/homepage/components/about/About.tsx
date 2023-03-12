@@ -1,4 +1,4 @@
-import {constants} from "../util/constants";
+import {constants} from "../../../util/constants";
 
 export const About = () => {
 
@@ -17,7 +17,7 @@ export const About = () => {
 									<div className="row">
 										<div className="col-sm-6 col-md-5">
 											<div className="about-img">
-												<img loading="lazy" src={require("../../images/primo_piano.jpg")} className="img-fluid rounded b-shadow-a" alt="primo piano"/>
+												<img loading="lazy" src={require("../../../../images/primo_piano.jpg")} className="img-fluid rounded b-shadow-a" alt="primo piano"/>
 											</div>
 										</div>
 										<div className="col-sm-6 col-md-7">

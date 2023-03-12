@@ -1,4 +1,4 @@
-import background from "../../images/counters-bg.jpg";
+import background from "../../../../images/counters-bg.jpg";
 export const Counter = () => {
 
 	return (

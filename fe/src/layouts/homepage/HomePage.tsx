@@ -1,9 +1,9 @@
-import {Hero} from "../hero/Hero";
 import React, {useEffect} from "react";
-import {About} from "../about/About";
-import {Services} from "../services/Services";
-import {Counter} from "../counter/Counter";
 import {Portfolio} from "../portfolio/Portfolio";
+import {Hero} from "./components/hero/Hero";
+import {About} from "./components/about/About";
+import {Services} from "./components/services/Services";
+import {Counter} from "./components/counter/Counter";
 
 export const HomePage = () => {
 
