@@ -24,9 +24,9 @@ export const About = () => {
 											<div className="about-info">
 												<p><span className="title-s">Name: </span> <span>Simone Celia</span></p>
 												<p><span className="title-s">Profile: </span> <span>full stack developer</span></p>
-												<p><span className="title-s">Email: </span> <span><a target="_blank" href={mailto}>{constants.email}</a></span></p>
-												<p><span className="title-s">Phone: </span> <span><a href={tel1to}>{constants.phone1}</a></span></p>
-												<p><span className="title-s">Phone: </span> <span><a href={tel2to}>{constants.phone2}</a></span></p>
+												<p><span className="title-s">Email: </span> <span><a target="_blank" rel="noreferrer" href={mailto}>{constants.email}</a></span></p>
+												<p><span className="title-s">Phone: </span> <span><a rel="noreferrer" href={tel1to}>{constants.phone1}</a></span></p>
+												<p><span className="title-s">Phone: </span> <span><a rel="noreferrer" href={tel2to}>{constants.phone2}</a></span></p>
 											</div>
 										</div>
 									</div>
@@ -62,9 +62,9 @@ export const About = () => {
 										<p className="lead">Enthusiast Software Engineer, knowledge on various technology solutions, from COBOL to JavaEE, experience on Banking,
 											Insurance, Financing, Energy, Automotive, Food Sector projects and public websites. Design, development, testing and bug fixing from
 											backend to frontend, loving the Open Source Philosophy (I love GNU/LINUX) and the Computer Science Education.</p>
-										<p className="lead">Personal Open Source Projects: <strong><a target="_blank"
+										<p className="lead">Personal Open Source Projects: <strong><a target="_blank" rel="noreferrer"
 																																									href="https://github.com/simon387">github.com/simone</a></strong></p>
-										<p className="lead">Full LinkedIn Profile: <strong><a target="_blank" href={constants.linkedin}>linkedin.com/simone</a></strong></p>
+										<p className="lead">Full LinkedIn Profile: <strong><a target="_blank" rel="noreferrer" href={constants.linkedin}>linkedin.com/simone</a></strong></p>
 									</div>
 								</div>
 							</div>

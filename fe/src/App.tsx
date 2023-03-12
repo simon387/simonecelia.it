@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import {Navbar} from "./layouts/navbar/Navbar";
+import {Navbar} from "./layouts/Navbar/Navbar";
 import {Redirect, Route, Switch} from "react-router";
-import {HomePage} from "./layouts/homepage/HomePage";
-import {Favs} from "./layouts/favs/Favs";
-import {ShameList} from "./layouts/shamelist/ShameList";
-import {Footer} from "./layouts/footer/Footer";
+import {HomePage} from "./layouts/HomePage/HomePage";
+import {Favs} from "./layouts/Favs/Favs";
+import {ShameList} from "./layouts/ShameList/ShameList";
+import {Footer} from "./layouts/Footer/Footer";
 
 export const App = () => {
 
