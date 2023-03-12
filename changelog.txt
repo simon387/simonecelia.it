@@ -1,3 +1,7 @@
+Version 1.5.0
+- Added React on the frontend
+- Added Typescript on the frontend
+
 Version 1.4.25
 - added FoldoBot portfolio
 
