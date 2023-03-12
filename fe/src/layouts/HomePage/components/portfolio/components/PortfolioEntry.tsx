@@ -20,7 +20,7 @@ export const PortfolioEntry: React.FC<{ asset: string, alt: string, title: strin
 						</div>
 						<div className="col-sm-4">
 							<div className="w-like">
-								<a href={props.link} target="_blank"> <span className="bi bi-plus-circle"></span></a>
+								<a href={props.link} rel="noreferrer" target="_blank"> <span className="bi bi-plus-circle"></span></a>
 							</div>
 						</div>
 					</div>

@@ -14,7 +14,7 @@ export const Navbar = () => {
 						<li><a className="nav-link scrollto" href="#work">Work</a></li>
 						<li className="dropdown"><Link to="/"><span>Tools</span> <i className="bi bi-chevron-down"></i></Link>
 							<ul>
-								<li><a target="_blank" rel="noreferrer" href="/poster">Poster</a></li>
+								<li><a target="_blank" rel="noreferrer" href="www.simonecelia.it/poster">Poster</a></li>
 								<li><a target="_blank" rel="noreferrer" href="/components/spring_cron_generator.html">Spring Cron Generator</a></li>
 								<li><a target="_blank" rel="noreferrer" href="https://regex101.com">Regex101</a></li>
 								<li><a target="_blank" rel="noreferrer" href="https://www.base64decode.org">Base64 Decode</a></li>
