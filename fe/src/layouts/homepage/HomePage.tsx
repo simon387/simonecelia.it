@@ -1,6 +1,7 @@
 import {Hero} from "../hero/Hero";
 import React, {useEffect} from "react";
 import {About} from "../about/About";
+import {Services} from "../services/Services";
 
 export const HomePage = () => {
 
@@ -16,6 +17,7 @@ export const HomePage = () => {
 			<Hero/>
 			<main id="main">
 				<About/>
+				<Services/>
 			</main>
 		</>
 	);
