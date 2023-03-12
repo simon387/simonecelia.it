@@ -1,4 +1,5 @@
 import {constants} from "../util/constants";
+import packageJson from "../../../package.json";
 
 export const Footer = () => {
 
@@ -10,7 +11,7 @@ export const Footer = () => {
 						<div className="col-sm-12">
 							<div className="copyright-box">
 								<p className="copyright">&copy; Copyright <strong>{constants.title}</strong> 2023. All Rights Reserved.
-									<a className="footer-link" target="_blank" rel="noreferrer" href="changelog.txt">version</a>
+									<a className="footer-link" target="_blank" rel="noreferrer" href="changelog.txt"> Version {packageJson.version}</a>
 								</p>
 								<div className="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
 							</div>
