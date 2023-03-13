@@ -13,7 +13,7 @@ My personal site repository www.simonecelia.it
 
 + ```.github/``` folder contains CI/CD logic.
 + ```docs/``` folder contains template backups.
-+ ```dumps/``` folder contains the script to create the database and the table(s).
++ ```sql_scripts/``` folder contains the script to create the database and the table(s).
 + ```test/``` folder contains repeteable tests for dev and prod enviroments.
 + ```deploy_localhost.*``` are script for localhost deploy and tests.
 

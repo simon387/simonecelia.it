@@ -22,7 +22,7 @@ export const Contact = () => {
 											<h2 className="title-left">Send Message</h2>
 										</div>
 										<div>
-											<form action="be/controllers/message.php" method="post" className="php-email-form" autoComplete="off">
+											<form action="http://localhost/simonecelia.it/be/controllers/message.php" method="post" className="php-email-form" autoComplete="off">
 												<div className="row">
 													<div className="col-md-12 mb-3">
 														<div className="form-group">
@@ -46,8 +46,8 @@ export const Contact = () => {
 													</div>
 													<div className="col-md-12">
 														<div className="form-group">
-															{/*<input type="checkbox" name="accept" id="accept-checkbox" required>GDPR Agreement - I consent to having this website store my*/}
-															{/*	submitted information so they can respond to my inquiry</input>*/}
+															<input type="checkbox" name="accept" id="accept-checkbox" required/>GDPR Agreement - I consent to having this website store my
+																submitted information so they can respond to my inquiry
 														</div>
 													</div>
 													<div className="col-md-12 text-center my-3">
@@ -72,7 +72,7 @@ export const Contact = () => {
 											<ul className="list-ico">
 												<li><span className="bi bi-geo-alt"></span> ITALY and SPAIN</li>
 												<li><span className="bi bi-phone"></span> <a href={tel1to}>{constants.phone1}</a></li>
-												<li><span className="bi bi-phone"></span> <a href={tel2to}>{constants.phone1}</a></li>
+												<li><span className="bi bi-phone"></span> <a href={tel2to}>{constants.phone2}</a></li>
 												<li><span className="bi bi-envelope"></span> <a target="_blank" rel="noreferrer" href={mailto}>{constants.email}</a></li>
 											</ul>
 										</div>
