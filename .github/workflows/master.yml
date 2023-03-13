@@ -20,9 +20,3 @@ jobs:
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           exclude: '[**/.git*, **/.git*/**, **/node_modules/**, TODO.md, deploy_localhost.*, LICENSE, README.md, **/docs/**, **/requests/**, **/dumps/**]'
-
-#      - name: Auto committing minified files to a separate branch
-#        uses: stefanzweifel/git-auto-commit-action@v4
-#        with:
-#          commit_message: "Github Action: Auto Minified JS, HTML and CSS files"
-#          branch: minified
