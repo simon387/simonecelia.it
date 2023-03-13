@@ -58,9 +58,3 @@ class Config
 ## Useful links
 
 + https://www.iloveimg.com
-
-## todo prima di andare in prod
-
-+ saveFromBackend
-+ save from front end
-+ CI
