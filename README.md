@@ -58,3 +58,8 @@ class Config
 ## Useful links
 
 + https://www.iloveimg.com
+
+## todo to fix
+
+- 404
+- shame

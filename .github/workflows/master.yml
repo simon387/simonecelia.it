@@ -16,7 +16,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: 📂 Sync files
+      - name: 📂 Sync files - front end
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
           server: ${{ secrets.ftp_server }}
@@ -24,3 +24,11 @@ jobs:
           password: ${{ secrets.ftp_password }}
           exclude: '[**/.git*, **/.git*/**, **/node_modules/**, deploy_localhost.*, LICENSE, README.md, **/docs/**, test/**, **/sql_scripts/**, fe/**, src/**, public/**, package.json, package-lock.json, tsconfig.json]'
           local-dir: build/
+
+      - name: 📂 Sync files - bakc end
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ${{ secrets.ftp_server }}
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          exclude: '[**/.git*, **/.git*/**, **/node_modules/**, deploy_localhost.*, LICENSE, README.md, **/docs/**, test/**, **/sql_scripts/**, fe/**, src/**, public/**, package.json, package-lock.json, tsconfig.json, build/**]'
