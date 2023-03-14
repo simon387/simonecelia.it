@@ -58,8 +58,3 @@ class Config
 ## Useful links
 
 + https://www.iloveimg.com
-
-## todo to fix
-
-- shame
-- favs
