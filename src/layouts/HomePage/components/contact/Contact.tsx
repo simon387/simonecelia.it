@@ -68,7 +68,7 @@ export const Contact = () => {
 										</div>
 										<div className="more-info">
 											<p className="lead">Feel free to contact me!</p>
-											<p className="lead"><b>Warning! Any malicious use of telephone numbers will be reported to the authorities and published <Link className="blue-a" target="_blank" to="/shame">here</Link>, in the shame list!</b></p>
+											<p className="lead"><b>Warning! Any malicious use of telephone numbers will be reported to the authorities and published <Link className="blue-a" to="/shame">here</Link>, in the shame list!</b></p>
 											<ul className="list-ico">
 												<li><span className="bi bi-geo-alt"></span> ITALY and SPAIN</li>
 												<li><span className="bi bi-phone"></span> <a href={tel1to}>{constants.phone1}</a></li>

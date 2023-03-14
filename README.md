@@ -62,3 +62,4 @@ class Config
 ## todo to fix
 
 - shame
+- favs
