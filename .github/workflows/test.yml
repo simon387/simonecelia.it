@@ -23,4 +23,4 @@ jobs:
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
           exclude: '[**/.git*, **/.git*/**, **/node_modules/**, deploy_localhost.*, LICENSE, README.md, **/docs/**, test/**, **/sql_scripts/**, fe/**, src/**, public/**, package.json, package-lock.json, tsconfig.json]'
-
+          local-dir: build/
