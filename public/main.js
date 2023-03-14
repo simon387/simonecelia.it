@@ -220,7 +220,7 @@
 	 * Preloader
 	 */
 	let preloader = select('#preloader');
-	if (preloader) {
+	if (preloader) {debugger
 		window.addEventListener('load', () => {
 			preloader.remove()
 		});
@@ -338,7 +338,7 @@
 			scrColorDepth: screen.colorDepth,
 			scrPixelDepth: screen.pixelDepth,
 		};
-		fetch('http://localhost/simonecelia.it/be/controllers/client.php', {
+		fetch('be/controllers/client.php', {
 			method: 'POST',
 			body: JSON.stringify({
 				details: JSON.stringify(info).toString(),
