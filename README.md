@@ -61,5 +61,4 @@ class Config
 
 ## todo to fix
 
-- 404
 - shame

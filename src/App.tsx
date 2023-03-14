@@ -16,10 +16,10 @@ export const App = () => {
 				<HomePage/>
 				<Footer/>
 			</Route>
-			<Route path='/favs' exact>
+			<Route path='/favs'>
 				<Favs/>
 			</Route>
-			<Route path='/shame' exact>
+			<Route path='/shame'>
 				<ShameList/>
 			</Route>
 			{/*<Redirect to="/"/>*/}
