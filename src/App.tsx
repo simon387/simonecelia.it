@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {Navbar} from "./layouts/Navbar/Navbar";
-import {Redirect, Route, Switch} from "react-router";
+import {Route, Switch} from "react-router";
 import {HomePage} from "./layouts/HomePage/HomePage";
 import {Favs} from "./layouts/Favs/Favs";
 import {ShameList} from "./layouts/ShameList/ShameList";
