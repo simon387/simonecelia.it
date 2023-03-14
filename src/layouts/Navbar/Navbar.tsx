@@ -14,7 +14,7 @@ export const Navbar = () => {
 						<li><a className="nav-link scrollto" href="#work">Work</a></li>
 						<li className="dropdown"><Link to="/"><span>Tools</span> <i className="bi bi-chevron-down"></i></Link>
 							<ul>
-								<li><a target="_blank" rel="noreferrer" href="www.simonecelia.it/poster">Poster</a></li>
+								<li><a target="_blank" rel="noreferrer" href="poster/index.php">Poster</a></li>
 								<li><a target="_blank" rel="noreferrer" href="spring_cron_generator.html">Spring Cron Generator</a></li>
 								<li><a target="_blank" rel="noreferrer" href="https://regex101.com">Regex101</a></li>
 								<li><a target="_blank" rel="noreferrer" href="https://www.base64decode.org">Base64 Decode</a></li>
@@ -23,7 +23,7 @@ export const Navbar = () => {
 								<li><a target="_blank" rel="noreferrer" href="https://github.com/simon387/notes">Dev Notes</a></li>
 								<li><a target="_blank" rel="noreferrer" href="https://github.com/users/simon387/projects/1">Personal TODO</a></li>
 								<li><a target="_blank" rel="noreferrer" href="https://macaddress.io">Macaddress.io</a></li>
-								<li><a target="_blank" rel="noreferrer" href="www.simonecelia.it/adminer.php">Adminer</a></li>
+								<li><a target="_blank" rel="noreferrer" href="adminer.php">Adminer</a></li>
 							</ul>
 						</li>
 						<li><a className="nav-link scrollto" href="#contact">Contact</a></li>

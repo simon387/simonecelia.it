@@ -1,7 +1,21 @@
+import React, {useEffect, useState} from "react";
 import {constants} from "../util/constants";
 import packageJson from "../../../package.json";
 
 export const Footer = () => {
+
+	const [isLoaded, setIsLoaded] = useState(false);
+	const [isPageLoaded, setIsPageLoaded] = useState(false); //this helps
+
+	useEffect(() => {
+		setIsLoaded(true);
+	}, []);
+
+	useEffect(() => {
+		if (isLoaded) {
+			setIsPageLoaded(true);
+		}
+	}, [isLoaded]);
 
 	return (
 		<>
@@ -19,9 +33,12 @@ export const Footer = () => {
 					</div>
 				</div>
 			</footer>
-			{/*{TODO}*/}
-			<div id="preloader_"></div>
-			<a href="/" rel="noreferrer"  className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
+			{!isPageLoaded &&
+				<>
+					<div id="preloader"></div>
+					<a href="/" rel="noreferrer" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
+				</>
+			}
 		</>
 	);
 }

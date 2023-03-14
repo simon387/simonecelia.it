@@ -22,7 +22,7 @@ export const Contact = () => {
 											<h2 className="title-left">Send Message</h2>
 										</div>
 										<div>
-											<form action="http://localhost/simonecelia.it/be/controllers/message.php" method="post" className="php-email-form" autoComplete="off">
+											<form action="be/controllers/message.php" method="post" className="php-email-form" autoComplete="off">
 												<div className="row">
 													<div className="col-md-12 mb-3">
 														<div className="form-group">
