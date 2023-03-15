@@ -31,7 +31,7 @@ export const About = () => {
 										</div>
 									</div>
 									<div className="skill-mf">
-										<p className="title-s">Man Skills</p>
+										<p className="title-s">Main Skills</p>
 										<span>Problem Solving</span><span className="pull-right"> 95%</span>
 										<div className="progress">
 											<div className="progress-bar" role="progressbar" style={{width: "95%"}} aria-valuenow={95} aria-valuemin={0} aria-valuemax={100}></div>
