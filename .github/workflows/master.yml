@@ -25,7 +25,7 @@ jobs:
           exclude: '[**/.git*, **/.git*/**, **/node_modules/**, deploy_localhost.*, LICENSE, README.md, **/docs/**, test/**, **/sql_scripts/**, fe/**, src/**, public/**, package.json, package-lock.json, tsconfig.json]'
           local-dir: build/
 
-      - name: 📂 Sync files - bakc end
+      - name: 📂 Sync files - back end
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
           server: ${{ secrets.ftp_server }}

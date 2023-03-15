@@ -9,7 +9,7 @@ My personal site repository www.simonecelia.it
 
 ---
 
-## dev info
+## Dev Info
 
 + ```.github/``` folder contains CI/CD logic.
 + ```docs/``` folder contains template backups.
@@ -55,6 +55,6 @@ class Config
 }
 ```
 
-## Useful links
+## Useful Links
 
 + https://www.iloveimg.com
