@@ -22,7 +22,6 @@ export const App = () => {
 			<Route path='/shame'>
 				<ShameList/>
 			</Route>
-			{/*<Redirect to="/"/>*/}
 		</Switch>
 	);
 }
