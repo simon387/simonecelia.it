@@ -58,3 +58,8 @@ class Config
 ## Useful Links
 
 + https://www.iloveimg.com
+
+## TODOs
+
++ fix spinner
++ changelog + package new mechanism

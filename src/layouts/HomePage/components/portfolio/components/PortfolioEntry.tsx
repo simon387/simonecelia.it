@@ -5,9 +5,9 @@ export const PortfolioEntry: React.FC<{ asset: string, alt: string, title: strin
 	return (
 		<div className="col-md-4" key={key}>
 			<div className="work-box">
-				<a href={require(`../../../../../images/${props.asset}`)} data-gallery="portfolioGallery" className="portfolio-lightbox">
+				<a href={require(`../../../../../images/portfolio/${props.asset}`)} data-gallery="portfolioGallery" className="portfolio-lightbox">
 					<div className="work-img">
-						<img loading="eager" src={require(`../../../../../images/${props.asset}`)} alt={props.alt} className="img-fluid"/>
+						<img loading="eager" src={require(`../../../../../images/portfolio/${props.asset}`)} alt={props.alt} className="img-fluid"/>
 					</div>
 				</a>
 				<div className="work-content">

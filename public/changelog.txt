@@ -1,3 +1,8 @@
+Version 1.5.6
+- updated profile image
+- updated todos
+- updated images dir structure
+
 Version 1.5.5
 - updated shame list
 
