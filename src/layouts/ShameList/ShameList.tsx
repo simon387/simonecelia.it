@@ -76,6 +76,8 @@ export const ShameList = () => {
 				<li>+393466753501 ladri truffa amazon</li>
 				<li>+393466990338 ladri truffa amazon</li>
 				<li>0688060022 ladri</li>
+				<li>05831705398 ladri</li>
+				<li>0280080962 ladri</li>
 				{/*<li>+39 ladri truffa amazon</li>*/}
 			</ul>
 		</>
