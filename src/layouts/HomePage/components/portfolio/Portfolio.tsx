@@ -40,8 +40,10 @@ export const Portfolio = () => {
 										link={"https://www.simonecelia.it"} key={11}/>,
 		<PortfolioEntry asset={"offerte_amazon.png"} alt={"offerte amazon"} title={"Offerte Amazon"} category={"Telegram Application"} date={"15 Jul. 2022"}
 										link={"https://github.com/simon387/offerte_amazon"} key={12}/>,
-		<PortfolioEntry asset={"FoldoBot.png"} alt={"FoldoBot"} title={"FoldoBot"} category={"Telegram Application"} date={"Jun 14, 2022"}
+		<PortfolioEntry asset={"FoldoBot.png"} alt={"FoldoBot"} title={"FoldoBot"} category={"Telegram Application"} date={"14 Jun. 2022"}
 										link={"https://github.com/simon387/FoldoBot"} key={13}/>,
+		<PortfolioEntry asset={"TGDownloaderBot.png"} alt={"TGDownloaderBot"} title={"TGDownloaderBot"} category={"Telegram Application"} date={"7 Apr. 2023"}
+										link={"https://github.com/simon387/TGDownloaderBot"} key={14}/>,
 	];
 	componentsArray = shuffleArray(componentsArray);
 
