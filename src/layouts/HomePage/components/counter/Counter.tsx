@@ -12,7 +12,7 @@ export const Counter = () => {
 								<span className="ico-circle"><i className="bi bi-check"></i></span>
 							</div>
 							<div className="counter-num">
-								<p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1"
+								<p data-purecounter-start="0" data-purecounter-end="55" data-purecounter-duration="1"
 									 className="counter purecounter"></p>
 								<span className="counter-text">WORKS COMPLETED</span>
 							</div>
@@ -24,7 +24,7 @@ export const Counter = () => {
 								<span className="ico-circle"><i className="bi bi-journal-richtext"></i></span>
 							</div>
 							<div className="counter-num">
-								<p data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
+								<p data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
 									 className="counter purecounter"></p>
 								<span className="counter-text">YEARS OF EXPERIENCE</span>
 							</div>
@@ -36,7 +36,7 @@ export const Counter = () => {
 								<span className="ico-circle"><i className="bi bi-people"></i></span>
 							</div>
 							<div className="counter-num">
-								<p data-purecounter-start="0" data-purecounter-end="31" data-purecounter-duration="1"
+								<p data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
 									 className="counter purecounter"></p>
 								<span className="counter-text">TOTAL CLIENTS</span>
 							</div>

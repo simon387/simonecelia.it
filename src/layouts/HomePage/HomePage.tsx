@@ -9,13 +9,18 @@ import {Contact} from "./components/contact/Contact";
 export const HomePage = () => {
 
 	useEffect(() => {
-		const script = document.createElement("script");
-		script.src = "main.js";
-		script.async = true;
-		document.body.appendChild(script);
+		const main_script = document.createElement("script");
+		main_script.src = "main.js";
+		main_script.async = true;
+		document.body.appendChild(main_script);
+		const purecounter_script = document.createElement("script");
+		purecounter_script.src = "vendor/purecounter/purecounter.js"
+		purecounter_script.async = true;
+		document.body.appendChild(purecounter_script);
 
 		return () => {
-			document.body.removeChild(script);
+			document.body.removeChild(main_script);
+			document.body.removeChild(purecounter_script);
 		}
 	}, []);
 
