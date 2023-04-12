@@ -5,7 +5,7 @@ export const Navbar = () => {
 	return (
 		<header id="header" className="fixed-top">
 			<div className="container d-flex align-items-center justify-content-between">
-				<h1 className="logo"><Link to="/">simonecelia.it</Link></h1>
+				<h1 className="logo"><a href="#hero">simonecelia.it</a></h1>
 				<nav id="navbar" className="navbar unselectable">
 					<ul>
 						<li><a className="nav-link scrollto active" href="#hero">Home</a></li>
