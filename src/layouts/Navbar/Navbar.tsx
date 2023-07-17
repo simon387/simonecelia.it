@@ -15,6 +15,7 @@ export const Navbar = () => {
 						<li className="dropdown"><Link to="/"><span>Tools</span> <i className="bi bi-chevron-down"></i></Link>
 							<ul>
 								<li><a target="_blank" rel="noreferrer" href="poster/index.php">Poster</a></li>
+								<li><a target="_blank" rel="noreferrer" href="https://www.digitalocean.com/community/tools/glob?comments=true&glob=%2A%2A%2F.git%2A%2F%2A%2A&matches=false&tests=test%2Fsam&tests=.git%2F%0D&tests=.github%2F%0D&tests=.git%2Ftest%0D&tests=.gitattributes%0D&tests=.gitignore%0D&tests=.git%2Fconfig%0D&tests=.git%2Ftest%2Ftest&tests=.github%2Fworkflows%2Fmain.yml&tests=node_modules%2Ffolder%2F%0D&tests=node_modules%2Fotherfolder%2F%0D&tests=subfolder%2Fnode_modules%2F">Glob Tester</a></li>
 								<li><a target="_blank" rel="noreferrer" href="spring_cron_generator.html">Spring Cron Generator</a></li>
 								<li><a target="_blank" rel="noreferrer" href="https://regex101.com">Regex101</a></li>
 								<li><a target="_blank" rel="noreferrer" href="https://www.base64decode.org">Base64 Decode</a></li>
