@@ -94,7 +94,7 @@ export const Contact = () => {
 													d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
 											</svg> </span>
 												</a></li>
-												<li><a target="_blank" rel="noreferrer" href="https://t.me/simon387"><span className="ico-circle"><i className="bi bi-telegram"></i></span></a></li>
+												<li><a target="_blank" rel="noreferrer" href="https://t.me/simone_celia"><span className="ico-circle"><i className="bi bi-telegram"></i></span></a></li>
 											</ul>
 										</div>
 									</div>
