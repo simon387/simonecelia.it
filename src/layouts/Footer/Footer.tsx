@@ -6,6 +6,7 @@ export const Footer = () => {
 
 	const [isLoaded, setIsLoaded] = useState(false);
 	const [isPageLoaded, setIsPageLoaded] = useState(false); //this helps
+	const year = new Date().getFullYear();
 
 	useEffect(() => {
 		setIsLoaded(true);
@@ -24,7 +25,7 @@ export const Footer = () => {
 					<div className="row">
 						<div className="col-sm-12">
 							<div className="copyright-box">
-								<p className="copyright">&copy; Copyright <strong>{constants.title}</strong> 2023. All Rights Reserved.
+								<p className="copyright">&copy; Copyright <strong>{constants.title}</strong> {year}. All Rights Reserved.
 									<a className="footer-link" target="_blank" rel="noreferrer" href="changelog.txt"> Version {packageJson.version}</a>
 								</p>
 								<div className="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
