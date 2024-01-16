@@ -1,3 +1,6 @@
+Version 1.5.22
+- rmved phone numbers
+
 Version 1.5.21
 - updated license
 - updated copyright year mechanism
