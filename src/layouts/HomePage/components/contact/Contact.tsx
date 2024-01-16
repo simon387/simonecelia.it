@@ -5,8 +5,8 @@ import {Link} from "react-router-dom";
 export const Contact = () => {
 
 	const mailto = "mailto:" + constants.email;
-	const tel1to = "tel:" + constants.phone1;
-	const tel2to = "tel:" + constants.phone2;
+	// const tel1to = "tel:" + constants.phone1;
+	// const tel2to = "tel:" + constants.phone2;
 
 	return (
 		<section id="contact" className="paralax-mf footer-paralax bg-image sect-mt4 route" style={{backgroundImage: `url(${background})`}}>
@@ -71,8 +71,8 @@ export const Contact = () => {
 											<p className="lead"><b>Warning! Any malicious use of telephone numbers will be reported to the authorities and published <Link className="blue-a" to="/shame">here</Link>, in the shame list!</b></p>
 											<ul className="list-ico">
 												<li><span className="bi bi-geo-alt"></span> ITALY and SPAIN</li>
-												<li><span className="bi bi-phone"></span> <a href={tel1to}>{constants.phone1}</a></li>
-												<li><span className="bi bi-phone"></span> <a href={tel2to}>{constants.phone2}</a></li>
+												{/*<li><span className="bi bi-phone"></span> <a href={tel1to}>{constants.phone1}</a></li>*/}
+												{/*<li><span className="bi bi-phone"></span> <a href={tel2to}>{constants.phone2}</a></li>*/}
 												<li><span className="bi bi-envelope"></span> <a target="_blank" rel="noreferrer" href={mailto}>{constants.email}</a></li>
 											</ul>
 										</div>
