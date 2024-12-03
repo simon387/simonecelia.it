@@ -1,3 +1,6 @@
+Version 1.5.26
+- fix html Favs
+
 Version 1.5.25
 - cens location
 
