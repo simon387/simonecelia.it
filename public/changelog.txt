@@ -1,3 +1,6 @@
+Version 1.5.27
+- update license
+
 Version 1.5.26
 - fix html Favs
 
