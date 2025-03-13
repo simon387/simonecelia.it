@@ -5,6 +5,7 @@ import {Route, Switch} from "react-router";
 import {HomePage} from "./layouts/HomePage/HomePage";
 import {Favs} from "./layouts/Favs/Favs";
 import {ShameList} from "./layouts/ShameList/ShameList";
+import {Gate} from "./layouts/Gate/Gate";
 import {Footer} from "./layouts/Footer/Footer";
 
 export const App = () => {
@@ -21,6 +22,9 @@ export const App = () => {
 			</Route>
 			<Route path='/shame'>
 				<ShameList/>
+			</Route>
+			<Route path='/cancello'>
+				<Gate/>
 			</Route>
 		</Switch>
 	);
