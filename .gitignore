@@ -26,3 +26,5 @@ yarn-error.log*
 lazygit.bat
 be/config/config.php
 .gradle
+
+package-lock.json
