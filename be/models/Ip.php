@@ -15,6 +15,9 @@ class Ip
 		$stmt = $this->connection->prepare($query);
 
 		$stmt->execute();
-		return $stmt;
+
+		// Estrai il valore IP dal risultato
+		$row = $stmt->fetch(PDO::FETCH_ASSOC);
+		return $row['ip']; // Restituisci solo il valore IP come stringa
 	}
 }
