@@ -16,3 +16,6 @@ Content-Type: application/json
 {
   "details" : "kek"
 }
+
+### test gate
+GET https://www.simonecelia.it/be/controllers/gate.php
