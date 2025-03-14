@@ -6,7 +6,7 @@ export const Gate = () => {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch('be/controller/gate.php', {method: 'GET'});
+				const response = await fetch('be/controllers/gate.php', {method: 'GET'});
 
 				if (!response.ok) {
 					throw new Error(`HTTP error! Status: ${response.status}`);
