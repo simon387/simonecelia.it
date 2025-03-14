@@ -1,22 +1,45 @@
 on:
   push:
     branches: [ master ]
+  workflow_dispatch:
+    inputs:
+      deploy_target:
+        description: 'Cosa vuoi deployare?'
+        required: true
+        default: 'both'
+        type: choice
+        options:
+          - frontend
+          - backend
+          - both
+
 name: 🚀 Deploy website on push
+
 jobs:
   build:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
+
     steps:
+      # Step 1: Checkout del codice più recente
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
 
+      # Step 2: Installazione delle dipendenze
       - name: Install dependencies
         run: npm install
 
+      # Step 3: Build del progetto
       - name: Build
         run: npm run build
 
+      # Step 4: Deploy del front end (se selezionato manualmente o tramite commit message)
       - name: 📂 Sync files - front end
+        if: |
+          contains(github.event.head_commit.message, '#frontend') ||
+          contains(github.event.head_commit.message, '#both') ||
+          github.event.inputs.deploy_target == 'frontend' ||
+          github.event.inputs.deploy_target == 'both'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.ftp_server }}
@@ -40,7 +63,13 @@ jobs:
             tsconfig.json
           local-dir: build/
 
+      # Step 5: Deploy del back end (se selezionato manualmente o tramite commit message)
       - name: 📂 Sync files - back end
+        if: |
+          contains(github.event.head_commit.message, '#backend') ||
+          contains(github.event.head_commit.message, '#both') ||
+          github.event.inputs.deploy_target == 'backend' ||
+          github.event.inputs.deploy_target == 'both'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.ftp_server }}
