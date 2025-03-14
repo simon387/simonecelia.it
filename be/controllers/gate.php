@@ -2,7 +2,14 @@
 // Abilita il CORS per permettere le richieste dal frontend
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
-header("Content-Type: application/json");
+header("Content-Type: */*");
+header("Access-Control-Allow-Methods: GET, OPTIONS");
+header("Access-Control-Max-Age: 3600");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+
+include_once '../services/IpService.php';
+
+$ipServices = new IpService();
 
 // Gestione degli errori
 function handleError($message)
@@ -20,16 +27,16 @@ try {
 		]
 	];
 
-	$context = stream_context_create($opts);
+	$context = stream_context_create($opts);/*
 	// Prima chiamata: ottieni l'IP
 	$ipResponse = file_get_contents('https://www.simonecelia.it/ipapi/be/ip/read.php', false, $context);
 
 	if (!$ipResponse) {
 		throw new Exception("Impossibile recuperare l'indirizzo IP");
 	}
-
+*/
 	// Assumendo che la risposta sia direttamente l'IP come testo
-	$ipAddress = trim($ipResponse);
+	$ipAddress = $ipServices->getIp();
 
 	// Seconda chiamata: usa l'IP ottenuto per chiamare il proxy
 	$proxyUrl = "http://{$ipAddress}:8080/proxy";
