@@ -3,8 +3,6 @@ import React, {useEffect, useState} from 'react';
 export const Gate = () => {
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState<string | null>(null);
-	const [data, setData] = useState(null);
-
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
