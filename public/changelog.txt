@@ -1,3 +1,6 @@
+Version 1.5.29
+- fix build
+
 Version 1.5.28
 - added gate integration
 
