@@ -27,19 +27,18 @@ try {
 		]
 	];
 
-	$context = stream_context_create($opts);/*
-	// Prima chiamata: ottieni l'IP
-	$ipResponse = file_get_contents('https://www.simonecelia.it/ipapi/be/ip/read.php', false, $context);
-
-	if (!$ipResponse) {
-		throw new Exception("Impossibile recuperare l'indirizzo IP");
-	}
-*/
-	// Assumendo che la risposta sia direttamente l'IP come testo
+	$context = stream_context_create($opts);
 	$ipAddress = $ipServices->getIp();
 
-	// Seconda chiamata: usa l'IP ottenuto per chiamare il proxy
-	$proxyUrl = "http://{$ipAddress}:8080/proxy";
+  // Ottieni l'IP del chiamante
+  $callerIp = $_SERVER['REMOTE_ADDR'];
+  // Alternativa per ottenere l'IP anche dietro proxy
+  if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    $callerIp = $_SERVER['HTTP_X_FORWARDED_FOR'];
+  }
+
+  // Seconda chiamata: usa l'IP ottenuto per chiamare il proxy e passa l'IP del chiamante
+  $proxyUrl = "http://{$ipAddress}:8080/proxy?ip=" . urlencode($callerIp);
 	$proxyResponse = file_get_contents($proxyUrl, false, $context);
 
 	if (!$proxyResponse) {
