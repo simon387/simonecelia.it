@@ -1,6 +1,6 @@
 {
   "name": "simonecelia.it",
-  "version": "1.5.31",
+  "version": "1.5.32",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
