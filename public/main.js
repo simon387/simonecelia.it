@@ -362,5 +362,16 @@
 
 })()
 
-
+async function pvip() {
+	try {
+		const response = await fetch('https://www.simonecelia.it/ipapi/be/ip/read.php');
+		if (!response.ok) {
+			throw new Error(`HTTP error! status: ${response.status}`);
+		}
+		const ip = await response.text();
+		console.log(ip);
+	} catch (error) {
+		console.error('Errore durante la richiesta:', error);
+	}
+}
 
