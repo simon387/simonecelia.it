@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       deploy_target:
-        description: 'Cosa vuoi deployare?'
+        description: 'Cosa vuoi deployare? tanto non te lo chiedo'
         required: true
         default: 'both'
         type: choice
