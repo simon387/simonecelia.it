@@ -23,6 +23,7 @@ export const Navbar = () => {
 								<li><a target="_blank" rel="noreferrer" href="https://curlconverter.com">Curl Converter</a></li>
 								<li><a target="_blank" rel="noreferrer" href="https://github.com/simon387/notes">Dev Notes</a></li>
 								<li><a target="_blank" rel="noreferrer" href="https://github.com/users/simon387/projects/5">Personal TODO</a></li>
+								<li><a target="_blank" rel="noreferrer" href="https://github.com/users/simon387/projects/2/views/1">Coding TODO</a></li>
 								<li><a target="_blank" rel="noreferrer" href="https://macaddress.io">Macaddress.io</a></li>
 								<li><a target="_blank" rel="noreferrer" href="adminer.php">Adminer</a></li>
 							</ul>
