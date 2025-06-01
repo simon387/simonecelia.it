@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       deploy_target:
-        description: 'Cosa vuoi deployare? tanto non te lo chiedo'
+        description: 'Deploy entrambi se il messaggio del commit non contiene né #frontend né #backend, altrimenti, deploy solo quello indicato.'
         required: true
         default: 'both'
         type: choice
@@ -21,25 +21,42 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout del codice più recente
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
 
-      # Step 2: Installazione delle dipendenze
+      - name: ⏳ Determine what to deploy
+        id: deploy_check
+        run: |
+          message="${{ github.event.head_commit.message }}"
+          input="${{ github.event.inputs.deploy_target }}"
+          echo "Commit message: $message"
+          echo "Manual input: $input"
+
+          if [[ "$input" == "frontend" ]]; then
+            echo "deploy_frontend=true" >> $GITHUB_OUTPUT
+            echo "deploy_backend=false" >> $GITHUB_OUTPUT
+          elif [[ "$input" == "backend" ]]; then
+            echo "deploy_frontend=false" >> $GITHUB_OUTPUT
+            echo "deploy_backend=true" >> $GITHUB_OUTPUT
+          elif [[ "$message" == *"#frontend"* ]]; then
+            echo "deploy_frontend=true" >> $GITHUB_OUTPUT
+            echo "deploy_backend=false" >> $GITHUB_OUTPUT
+          elif [[ "$message" == *"#backend"* ]]; then
+            echo "deploy_frontend=false" >> $GITHUB_OUTPUT
+            echo "deploy_backend=true" >> $GITHUB_OUTPUT
+          else
+            echo "deploy_frontend=true" >> $GITHUB_OUTPUT
+            echo "deploy_backend=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Install dependencies
         run: npm install
 
-      # Step 3: Build del progetto
       - name: Build
         run: npm run build
 
-      # Step 4: Deploy del front end (se selezionato manualmente o tramite commit message)
       - name: 📂 Sync files - front end
-        if: |
-          contains(github.event.head_commit.message, '#frontend') ||
-          contains(github.event.head_commit.message, '#both') ||
-          github.event.inputs.deploy_target == 'frontend' ||
-          github.event.inputs.deploy_target == 'both'
+        if: ${{ steps.deploy_check.outputs.deploy_frontend == 'true' }}
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.ftp_server }}
@@ -63,13 +80,8 @@ jobs:
             tsconfig.json
           local-dir: build/
 
-      # Step 5: Deploy del back end (se selezionato manualmente o tramite commit message)
       - name: 📂 Sync files - back end
-        if: |
-          contains(github.event.head_commit.message, '#backend') ||
-          contains(github.event.head_commit.message, '#both') ||
-          github.event.inputs.deploy_target == 'backend' ||
-          github.event.inputs.deploy_target == 'both'
+        if: ${{ steps.deploy_check.outputs.deploy_backend == 'true' }}
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.ftp_server }}
